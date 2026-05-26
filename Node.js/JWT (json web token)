@@ -1,0 +1,14 @@
+// JWT (JSON Web Token) es un estándar ultra popular en desarrollo web que sirve para autenticar usuarios de forma segura. 
+// Un JWT es exactamente eso: un token (una cadena de texto larga) que el servidor le da al cliente cuando inicia sesión correctamente. A partir de ese momento, el cliente envía esa "pulsera" en cada petición HTTP para demostrar quién es.
+
+//  ¿Cómo se compone un JWT? Un JWT se divide en tres partes, cada una separada por un punto (.):
+
+// 1. Header (Encabezado): Contiene información sobre el tipo de token y el algoritmo de cifrado que se usó para firmarlo. Por ejemplo, podría decir que es un JWT y que se usó HMAC SHA256 para firmarlo.
+// 2. Payload (Carga útil): Aquí es donde van los datos que quieres guardar en el token, como el ID del usuario, su nombre o su rol. Estos datos se llaman "claims" (reclamaciones) y pueden ser personalizados según tus necesidades.
+// 3. Signature (Firma): Esta parte es la más importante para la seguridad. Se crea tomando el header y el payload, aplicando un algoritmo de cifrado con una clave secreta que solo el servidor conoce. Esto asegura que nadie pueda modificar el token sin que se note.       
+// ¿Cómo funciona el proceso de autenticación con JWT?
+// 1. El usuario inicia sesión enviando sus credenciales (como correo y contraseña) al servidor.
+// 2. El servidor verifica las credenciales y, si son correctas, crea un JWT con la información del usuario y lo firma con su clave secreta.
+// 3. El servidor envía el JWT de vuelta al cliente.
+// 4. El cliente guarda el JWT (generalmente en localStorage o cookies) y lo incluye en el encabezado de cada petición HTTP que haga al servidor para acceder a recursos protegidos.
+// 5. El servidor recibe la petición, verifica la firma del JWT para asegurarse de que es válido y, si todo está bien, procesa la solicitud y devuelve la respuesta.

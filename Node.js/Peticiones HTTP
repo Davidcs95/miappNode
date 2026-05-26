@@ -1,0 +1,22 @@
+// Una petición HTTP (Hypertext Transfer Protocol) es, en palabras sencillas, la forma en que las computadoras se comunican en internet. Cada vez que navegas, buscas algo o usas una app, estás enviando y recibiendo estas peticiones.
+// ¿Para qué sirven?  Sirven para hacer que el internet sea dinámico. Sin peticiones HTTP, no podrías interactuar con ninguna página. Se usan principalmente para cuatro acciones fundamentales en el desarrollo web (conocidas como el concepto CRUD):
+
+// 1. Pedir información (Read): Cuando entras a una página de ropa o a ver el clima, tu navegador envía una petición para "traer" esos datos y mostrártelos.
+// 2. Crear información (Create): Cuando registras un nuevo usuario o publicas un comentario, estás enviando una petición para crear nuevos datos.
+// 3. Actualizar información (Update): Cuando editas tu perfil o cambias tu contraseña, estás enviando una petición para modificar datos existentes.
+// 4. Eliminar información (Delete): Cuando borras un mensaje o desactivas tu cuenta, estás enviando una petición para eliminar datos.
+
+// ¿Cómo se compone una petición HTTP?
+// 1. Método: Indica la acción que quieres realizar (GET, POST, PUT, DELETE).
+// 2. URL: Es la dirección del recurso al que quieres acceder o modificar.
+// 3. Encabezados (Headers): Contienen información adicional sobre la petición, como el tipo de contenido o las credenciales de autenticación.
+// 4. Cuerpo (Body): En algunas peticiones, como POST o PUT, puedes enviar datos adicionales (como un formulario o un archivo).
+
+// RESPUESTA Una vez que el servidor recibe la petición, procesa todo en la base de datos y te devuelve una Respuesta HTTP, la cual siempre viene acompañada de un Código de Estado (Status Code) para avisarte cómo salió todo:
+
+// 200 OK: Todo salió bien, aquí tienes lo que pediste.
+// 201 Created: Se creó algo nuevo (usado en POST).
+// 400 Bad Request: Algo salió mal con tu petición, revisa lo que enviaste.
+// 401 Unauthorized: Necesitas iniciar sesión o no tienes permisos.
+// 404 Not Found: No se encontró el recurso que pediste.
+// 500 Internal Server Error: El servidor tuvo un problema, no es tu culpa.
