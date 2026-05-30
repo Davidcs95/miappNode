@@ -4,6 +4,7 @@ const app = express();
 const connectDB = require('./config/db');
 const auth = require('./routes/auth.routes');
 const projectRoutes = require('./routes/project.route');
+const taskRoutes = require('./routes/task.route');
 
 require('dotenv').config();
 
@@ -12,7 +13,7 @@ dotenv.config();
 app.use(express.json());
 
 app.use('/api/auth', auth);
-
+app.use('/api/tasks', taskRoutes);
 const PORT = process.env.PORT;
 app.use('/api/projects', projectRoutes);
 

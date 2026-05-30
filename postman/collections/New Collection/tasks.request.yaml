@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/api/tasks
+method: POST
+body:
+  type: json
+  content: "{\"titulo\": \"Terminar la actividad del 27 de mayo\",\r
+
+    \    \"completado\": false\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTExYWZmNThiNDBjNWM1YWQ3YzI3OCIsInVzZXJuYW1lIjoiRGF2aWQgT2xheWEiLCJlbWFpbCI6ImRhdmlkOTVAZ21haWwuY29tIiwiaWF0IjoxNzgwMTA0NDgxLCJleHAiOjE3ODAxMDgwODF9.frbB4EGuu9-Ojaz_EjSRtZ-tdjOTWHTK55Vuc202eTM
+order: 4276500734319183
