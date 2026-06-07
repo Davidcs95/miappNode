@@ -1,0 +1,25 @@
+// Es una extension de Javascript  creada por Microsoft  JavaScript + Tipos de datos = TypeScript
+// Puedes agregar: 
+// * tipo de variables * tipo de funciones * inferfaces * clases mejoradas * deteccion demprana de errores * mejor autocompletado en VS code
+// Existe porque en Javascript se puede generar errores dificiles de encontrar con typescript se puede evitar 
+// datos principales string (texto) * numero * boolean * array * object * any * Null
+// Como tipar variables (escribir)
+// ejm java = let nombre ="david" ---- typescript = let nombre: string ="david" 
+// Como tipar funciones 
+// ejm function saludar(): void { 
+//               console.log("hola mundo");    }
+// funcion que retorna texto function obtenerNombre(): string {
+//               return "david";    }
+// funcion que retorna numero function sumar(a: number, b: number): number {
+//               return a + b;    }
+// ¿Qué es Angular? Angular es un framework desarrollado por Google para crear aplicaciones web modernas.
+// Angular utiliza TypeScript como su lenguaje principal, lo que permite a los desarrolladores escribir código más estructurado y mantenible.
+// Angular se basa en componentes, lo que facilita la reutilización de código y la creación de interfaces de usuario dinámicas.
+// Angular ofrece una amplia gama de herramientas y características, como el enrutamiento, la gestión del estado y la integración con servicios web, lo que lo convierte en una opción popular para el desarrollo de aplicaciones web.
+//puedes crear sistemas empresariales - tiendas virtuales - dashboards - aplicaciones  web complejas - paneles administrativos - aplicaciones móviles con Ionic - aplicaciones de escritorio con Electron - aplicaciones de realidad aumentada con Angular AR.
+
+// Buenas prácticas
+//Evitar any.
+//Tipar funciones.
+//Usar interfaces.
+//Nombres descriptivos.
