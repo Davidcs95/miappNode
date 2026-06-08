@@ -1,0 +1,39 @@
+// Un "standalone" (o sistema independiente) es un elemento, programa o dispositivo que funciona de manera autónoma, sin depender de otros equipos, redes, complementos o conexión a internet para operar.
+
+// Antes, todo componente de Angular requería un módulo contenedor para funcionar. Con los componentes standalone, la gestión del código se vuelve mucho más directa y sencilla.
+
+// ventajas 
+// 
+// Menos código repetitivo (Boilerplate): Ya no necesitas crear, registrar ni mantener archivos *.module.ts pesados.
+
+// Aprendizaje más rápido: Facilita la adopción de Angular para desarrolladores nuevos al eliminar la complejidad de los módulos.
+
+// Carga diferida más simple (Lazy Loading): Puedes cargar componentes individuales directamente en las rutas, reduciendo el tamaño inicial de tu aplicación.
+
+// Mejor rendimiento: Facilita al compilador la eliminación de código que no se usa (tree-shaking
+
+// Mejor integración con herramientas modernas: Se alinea mejor con las tendencias actuales de desarrollo web, como los micro frontends y las aplicaciones basadas en componentes.
+
+// Mayor flexibilidad: Puedes usar componentes standalone en cualquier parte de tu aplicación, incluso dentro de módulos tradicionales, lo que facilita la transición gradual hacia un enfoque más moderno.
+
+//Cómo se ve un Componente Standalone?
+
+// import { Component } from '@angular/core';
+//import { CommonModule } from '@angular/common'; // Requerido para *ngIf, *ngFor, etc.
+//import { ComponenteHijo } from './hijo.component';
+
+//¿Cómo se usan hoy en día?
+
+//  A partir de Angular 17, los componentes standalone se convirtieron en la opción por defecto. Cuando usas el comando ng new, tu aplicación se genera automáticamente con esta nueva estructura limpia, sin archivos NgModule.
+
+
+// estructura de un componente standalone
+//  mi proyecto-angular
+// ├── .angular          # Caché local del compilador de Angular
+// ├── .vscode           # Configuraciones para Visual Studio Code
+// ├── node_modules      # Dependencias y librerías de Node.js
+// ├── public             # Archivos estáticos públicos (imágenes, favicons)
+// ├── src                # Código fuente de la aplicación
+// │   ├── app            # Carpeta principal de la aplicación
+// │   │   ├── index.html  # Archivo HTML principal de la aplicación
+// │   │   ├── services    # Servicios para lógica de negocio 

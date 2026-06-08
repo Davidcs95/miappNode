@@ -8,3 +8,9 @@
 // Angular CLI también ofrece comandos para generar componentes, servicios, módulos y otros elementos de la aplicación. Por ejemplo, para generar un nuevo componente llamado "header", se puede usar el comando ng generate component header o ng g c header. Esto crea automáticamente los archivos necesarios para el componente y actualiza el módulo correspondiente para incluirlo.   
 // Angular CLI también facilita la ejecución de pruebas unitarias y de extremo a extremo. Con el comando ng test, se pueden ejecutar pruebas unitarias utilizando el framework de pruebas Jasmine y el corredor de pruebas Karma. Para las pruebas de extremo a extremo, se puede usar el comando ng e2e, que ejecuta pruebas utilizando Protractor. Esto permite a los desarrolladores asegurarse de que su aplicación funciona correctamente en diferentes escenarios y dispositivos.
 // Además, Angular CLI ofrece comandos para construir y desplegar aplicaciones. Con el comando ng build, se puede generar una versión optimizada de la aplicación lista para producción. Para desplegar la aplicación, se pueden usar servicios como Firebase Hosting o Netlify, que ofrecen integración con Angular CLI para facilitar el proceso de despliegue. En resumen, Angular CLI es una herramienta esencial para cualquier desarrollador Angular, ya que simplifica y agiliza el proceso de desarrollo, permitiendo a los desarrolladores centrarse en escribir código de calidad en lugar de preocuparse por la configuración y el mantenimiento del proyecto.
+//Comandos importantes
+
+// ng new 
+// ng serve
+// ng generate component
+// ng generate service
