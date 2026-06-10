@@ -27,7 +27,7 @@
 //  A partir de Angular 17, los componentes standalone se convirtieron en la opción por defecto. Cuando usas el comando ng new, tu aplicación se genera automáticamente con esta nueva estructura limpia, sin archivos NgModule.
 
 
-// estructura de un componente standalone
+// Estructura de un componente standalone
 //  mi proyecto-angular
 // ├── .angular          # Caché local del compilador de Angular
 // ├── .vscode           # Configuraciones para Visual Studio Code
@@ -36,4 +36,13 @@
 // ├── src                # Código fuente de la aplicación
 // │   ├── app            # Carpeta principal de la aplicación
 // │   │   ├── index.html  # Archivo HTML principal de la aplicación
-// │   │   ├── services    # Servicios para lógica de negocio 
+// │   │   ├── main.ts      # Punto de entrada de la aplicación (arranque)
+// │   │   ├── styles.css   # Archivo de estilos principal de la aplicación
+// │   │   ├── app.component.ts  # Componente raíz de la aplicación
+// │   │   ├── app.component.html # Plantilla HTML del componente raíz
+// │   │   ├── app.component.css  # Estilos específicos del componente raíz 
+// │   │   └── ...           # Otros componentes, servicios, módulos, etc.
+// ├── angular.json       # Configuración del proyecto Angular
+// ├── package.json       # Configuración de dependencias y scripts de npm
+// ├── tsconfig.json      # Configuración del compilador TypeScript
+// └── ...                # Otros archivos de configuración y documentación

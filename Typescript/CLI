@@ -10,7 +10,11 @@
 // Además, Angular CLI ofrece comandos para construir y desplegar aplicaciones. Con el comando ng build, se puede generar una versión optimizada de la aplicación lista para producción. Para desplegar la aplicación, se pueden usar servicios como Firebase Hosting o Netlify, que ofrecen integración con Angular CLI para facilitar el proceso de despliegue. En resumen, Angular CLI es una herramienta esencial para cualquier desarrollador Angular, ya que simplifica y agiliza el proceso de desarrollo, permitiendo a los desarrolladores centrarse en escribir código de calidad en lugar de preocuparse por la configuración y el mantenimiento del proyecto.
 //Comandos importantes
 
-// ng new 
-// ng serve
-// ng generate component
-// ng generate service
+// ng new  ---------- Crear un proyecto Angular
+// ng serve   - ---------- Abre automáticamente el navegador.
+// ng generate component ---------- Crear un componente
+// ng generate service  ----------- Crear un servicio
+// ng generate module  ----------- Crear un módulo
+// ng test  ----------- Ejecutar pruebas unitarias
+// ng e2e  ----------- Ejecutar pruebas de extremo a extremo
+// ng build  ----------- Construir la aplicación para producción
