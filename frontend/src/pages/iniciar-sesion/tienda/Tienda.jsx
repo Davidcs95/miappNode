@@ -1,25 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import './Section2.css';
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
   return (
 
-
+  <div> 
 
     <section>
       {/* Contenedor del encabezado (Barra Azul) */}
       <div className="head">
         <div className="titulo">
+
+
           {/* Usamos <Link> de React Router en lugar de <a> para navegar sin recargar la página */}
+          
+          
           <Link to="/" className="logo">
 
-          
-        <h1>
-              <img src="./imagenes/filomena.png" alt="inicio" />
+           <h1>
+            <img src="/imagenes/Filomena.png" alt="Logo Filomena"/>
               ¡Filomena store!
             </h1>
           </Link>
+
+
+
+
+
 
            {usuarioLogueado ? (
             
@@ -97,6 +106,47 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
         </li>  
       </div>        
     </section>
+
+   
+    <section> 
+
+      <div className="section2">
+
+
+        <p> ¡Welcome to the ultimate pet paradise! Explore our extensive selection of products and professional services for your pets. Want to stay updated? Click the button below to join our community and learn more."!</p>
+
+       <button
+       type='button'
+       className='boton-registro'
+       nClick={() => console.log("¡Registro iniciado!")}
+>
+  ¡Register here!
+</button>
+
+       
+        
+
+      
+          
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
   );
 };
 
