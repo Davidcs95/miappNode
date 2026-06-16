@@ -13,6 +13,7 @@
 }
 
 p {
+
 font-family: 'Quicksand', sans-serif;
 font-size: 2.5rem; 
 font-weight: 700;
@@ -21,6 +22,34 @@ width: 30%;
 padding-left: 10px;
 margin: 300px;
 color: #ffffff;
-text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 text-align: left;
+margin-top: 400px;
+}
+
+
+.boton-registro {
+display: flex;
+background-color: #ff9800;
+color: #ffffff;
+font-family: 'Quicksand', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+padding: 14px 30px;
+border: 2px solid #e68900;
+border-radius: 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-left: -250px;
+margin-top: 300px;
+
+}
+
+.boton-registro:hover {
+  background-color: #ffffff;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

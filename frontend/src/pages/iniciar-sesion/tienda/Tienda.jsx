@@ -2,8 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import './Section2.css';
+import './Section3.css';
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
+
+  // funcion para formulario
+  const handleScroll = () => {
+  const element = document.getElementById("formulario-registro");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
   return (
 
   <div> 
@@ -108,31 +117,48 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
     </section>
 
    
-    <section> 
+     <section>
 
       <div className="section2">
 
 
         <p> ¡Welcome to the ultimate pet paradise! Explore our extensive selection of products and professional services for your pets. Want to stay updated? Click the button below to join our community and learn more."!</p>
 
-       <button
-       type='button'
-       className='boton-registro'
-       nClick={() => console.log("¡Registro iniciado!")}
->
-  ¡Register here!
-</button>
+       <button 
+        type="button" 
+        className="boton-registro" 
+        onClick={handleScroll}
+       >
+       ¡Register here!
+       </button>
 
-       
         
 
-      
+       <div id="formulario-registro">
+        </div>  
           
+       
 
-
+     
 
       </div>
-    </section>
+
+      </section>
+
+
+
+    <section>
+   <div className='section3'>
+    
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi exercitationem, atque voluptatibus aperiam natus temporibus provident animi blanditiis inventore nam, quod perferendis impedit voluptas! Voluptatum debitis quis unde a.</p>
+
+
+   </div>
+
+
+    </section>    
+
+    
 
 
 
