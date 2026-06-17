@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import './Section2.css';
 import './Section3.css';
+import './Carrusel.css';
+import Carrusel from './Carrusel';
+
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
@@ -11,8 +14,11 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
   const element = document.getElementById("formulario-registro");
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });
+    
   }
 };
+
+ 
   return (
 
   <div> 
@@ -150,7 +156,13 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
     <section>
    <div className='section3'>
     
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi exercitationem, atque voluptatibus aperiam natus temporibus provident animi blanditiis inventore nam, quod perferendis impedit voluptas! Voluptatum debitis quis unde a.</p>
+   
+   
+
+   <Carrusel />
+
+
+    
 
 
    </div>
