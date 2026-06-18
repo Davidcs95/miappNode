@@ -2,9 +2,14 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-
 // REGISTER
 const register = async (req, res) => {
+    
+    
+    console.log("LOGIN RECIBIDO:", req.body);
+
+    
+
     try {
 
         const { username, email, password } = req.body;
@@ -18,7 +23,6 @@ const register = async (req, res) => {
         }
 
         const salt = await bcrypt.genSalt(10);
-
         const hashedPassword = await bcrypt.hash(password, salt);
 
         const user = new User({
@@ -35,16 +39,18 @@ const register = async (req, res) => {
 
     } catch (error) {
 
+        console.error("ERROR REGISTER:", error);
+
         return res.status(500).json({
-            message: 'Error en el registro'
+            message: 'Error en el registro',
+            error: error.message
         });
     }
 };
 
-
 // LOGIN
 const login = async (req, res) => {
-
+console.log("LOGIN RECIBIDO:", req.body);
     try {
 
         const { email, password } = req.body;
@@ -74,13 +80,17 @@ const login = async (req, res) => {
                 username: user.username,
                 email: user.email
             },
-            process.env.JWT_SECRET || 'PalabraSecretaProvisional',
+            process.env.JWT_SECRET,
             { expiresIn: '1h' }
         );
 
         return res.status(200).json({
-            message: 'Login exitoso',
-            token
+    message: 'Login exitoso',
+    token,
+    user: {
+        username: user.username,
+        email: user.email
+    }
         });
 
     } catch (error) {
@@ -91,8 +101,7 @@ const login = async (req, res) => {
     }
 };
 
-
-// EXPORTS
+// EXPORTAR
 module.exports = {
     register,
     login

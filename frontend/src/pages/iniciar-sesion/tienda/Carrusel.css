@@ -5,8 +5,8 @@
 }
 
 .swiper-slide {
-  width: 300px; /* Tamaño real de la tarjeta */
-  height: 400px;
+  width: 500px; /* Tamaño real de la tarjeta */
+  height: 500px;
 }
 
 .swiper-slide img {
@@ -20,8 +20,8 @@
 
 
 .tarjeta-3d {
-  width: 300px !important; 
-  height: 400px !important;
+  width: 500px !important; 
+  height: 500px !important;
 }
 
 .tarjeta-3d img {

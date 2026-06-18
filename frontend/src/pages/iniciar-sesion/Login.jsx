@@ -1,81 +1,112 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './Login.css';
 
 
+const Login = ({ setUsuarioLogueado }) => {
 
-
-const Login = ({ usuarios, setUsuarioLogueado }) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validamos si el usuario existe en nuestra lista
-    const usuarioEncontrado = usuarios.find(
-      (u) => u.email === email && u.password === password
-    );
+    try {
 
-    if (usuarioEncontrado) {
-  setUsuarioLogueado(usuarioEncontrado);
-  localStorage.setItem('usuarioLogueado', JSON.stringify(usuarioEncontrado)); // <--- ¡Esto es la clave!
-  alert("¡Inicio de sesión exitoso!");
-  navigate('/');
-    } else {
-      alert("Usuario no registrado o credenciales incorrectas");
+      const response = await fetch(
+        'http://localhost:3000/api/auth/login',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email,
+            password
+          })
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+
+     localStorage.setItem('token', data.token);
+
+     localStorage.setItem(
+     'usuarioLogueado',
+     JSON.stringify(data.user)
+     );
+
+     setUsuarioLogueado(data.user);
+
+     alert('¡Inicio de sesión exitoso!');
+
+     navigate('/');
+     
+
+      }
+
+     } catch (error) {
+
+      console.error(error);
+
+      alert('Error al conectar con el servidor');
     }
   };
 
-    
+  return (
+    <div className="login-container">
 
+  <div className="login-card">
 
- return (
+    <h2 className="login-title">
+      ¡Filomena Store! - Iniciar Sesión
+    </h2>
 
-    <div style={{ padding: '48px', maxWidth: '400px', margin: '0 auto', fontFamily: 'sans-serif' }}>
-      <h2>¡Filomena store! - Iniciar Sesión</h2>
-      
-      <form style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }} onSubmit={handleSubmit}>
-        
-          <div>
-            <label style={{ display: 'block', marginBottom: '5px' }}>Email Address:</label>
-            <input type="email" 
-            placeholder="example@gmail.com" 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
-        </div>
-        
-        <div>
-          <label style={{ display: 'block', marginBottom: '5px' }}>Password:</label>
-          <input type="password" 
-          placeholder="********"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-           style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
-        </div>
-        
-    
-        <button type="submit" style={{ padding: '10px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
-          Sign In
-        </button>
-      </form>
+    <form
+      className="login-form"
+      onSubmit={handleSubmit}
+    >
 
+      <input
+        className="login-input"
+        type="email"
+        placeholder="Correo electrónico"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
+      <input
+        className="login-input"
+        type="password"
+        placeholder="Contraseña"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
 
-      <div style={{ marginTop: '15px', textAlign: 'center', fontSize: '14px' }}>
-        <span>¿No tienes una cuenta? </span>
-        <Link to="/register" style={{ color: '#007bff', fontWeight: 'bold', textDecoration: 'none' }}>
-          Regístrate aquí
-        </Link>
-      </div>
+      <button
+        className="login-button"
+        type="submit"
+      >
+        Iniciar Sesión
+      </button>
 
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <Link to="/" style={{ color: '#007bff', textDecoration: 'none' }}>
-          ← Volver a la tienda
-        </Link>
-      </div>
+    </form>
+
+    <div className="login-footer">
+      <Link
+        className="register-link"
+        to="/register"
+      >
+        Crear cuenta
+      </Link>
     </div>
+
+  </div>
+
+</div>
   );
 };
 

@@ -1,22 +1,35 @@
-const dotenv = require('dotenv');
 const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const dotenv = require('dotenv');
+
+// 1. Configuración de entorno única
+dotenv.config();
+
 const app = express();
-const connectDB = require('./config/db');
+
+// 2. Importaciones
 const auth = require('./routes/auth.routes');
 const projectRoutes = require('./routes/project.route');
 const taskRoutes = require('./routes/task.route');
-const cors = require('cors');
-require('dotenv').config();
+const connectDB = require('./config/db');
 
+// 3. Inicialización de Base de Datos
 connectDB();
-dotenv.config();
+mongoose.connection.once('open', () => {
+  console.log("¡Conectado exitosamente a la base de datos:", mongoose.connection.name);
+});
+
+// 4. Middlewares
 app.use(express.json());
 app.use(cors());
+
+// 5. Rutas
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
-const PORT = process.env.PORT;
 app.use('/api/projects', projectRoutes);
 
+const PORT = process.env.PORT || 3000; 
 app.listen(PORT, () => {
-  console.log(`Te conectaste al puerto ${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });

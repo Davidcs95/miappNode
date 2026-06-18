@@ -23,7 +23,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
   <div> 
 
-    <section>
+    <section>  {/* head 1 */}
       {/* Contenedor del encabezado (Barra Azul) */}
       <div className="head">
         <div className="titulo">
@@ -48,7 +48,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
            {usuarioLogueado ? (
             
            <div className="saludo-usuario">
-           <h3>¡Hola, {usuarioLogueado.nombre}!</h3>
+           <h3>¡Hola, {usuarioLogueado.username}!</h3>
            {/* Botón para cerrar sesión */}
            <button  className="button2" onClick={cerrarSesion}>Cerrar Sesión</button>
            </div>
@@ -123,7 +123,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
     </section>
 
    
-     <section>
+     <section> {/* head 2 */}
 
       <div className="section2">
 
@@ -149,12 +149,12 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
       </div>
 
-      </section>
+      </section>  
 
 
 
-    <section>
-   <div className='section3'>
+    <section> {/* head 3 */}
+    <div className='section3'> 
     
    
    
