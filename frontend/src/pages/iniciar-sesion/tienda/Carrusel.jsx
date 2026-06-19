@@ -26,16 +26,16 @@ export default function Carrusel() {
         navigation={true}
         modules={[EffectCoverflow, Navigation, Autoplay]}
       >
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comiendo.png" alt="1" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/caballo.png" alt="2" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/caballo11.jpg" alt="1" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/conejo1.webp" alt="2" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/maggi2.jpg" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/cateating2.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/catanddog.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/orange.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/cama1.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Ave.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/food1.webp" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/cepillodog.webp" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidadog.jpg" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/horseeating.jpg" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/cat22.jpg" alt="3" /></SwiperSlide>
@@ -44,7 +44,7 @@ export default function Carrusel() {
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Comidacat.jpg" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/ave1.jpg" alt="3" /></SwiperSlide>
         <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Arena.jpg" alt="3" /></SwiperSlide>
-        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/Ave.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide className="tarjeta-3d"><img src="/imagenes/toys1.webp" alt="3" /></SwiperSlide>
       </Swiper>
     </div>
   );

@@ -103,10 +103,26 @@ const Login = ({ setUsuarioLogueado }) => {
         Crear cuenta
       </Link>
     </div>
+     <div style={{ marginTop: '20px', textAlign: 'center' }}>
+  <Link 
+    to="/" 
+    style={{ 
+      color: '#007bff', 
+      textDecoration: 'none', 
+      fontWeight: 'bold',
+      fontSize: '14px',
+      display: 'inline-block',
+      padding: '5px'
+    }}
+  >
+    &larr; Back to Home
+  </Link>
+</div>
 
   </div>
 
 </div>
+
   );
 };
 
