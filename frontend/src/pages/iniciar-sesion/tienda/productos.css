@@ -9,7 +9,7 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  height: 500px; /* Altura fija para uniformidad */
+  height: 600px; /* Altura fija para uniformidad */
   transition: transform 0.3s ease;
 }
 
@@ -84,4 +84,17 @@
   margin: 5px 0;
   color: #000; /* Asegura que el texto sea visible */
   font-weight: bold;
+}
+
+
+.btn-comprar {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative; /* Asegura que se posicione bien */
+  z-index: 10;        /* Trae el botón al frente */
+  pointer-events: auto; /* Fuerza la interacción con el mouse */
 }

@@ -14,19 +14,74 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 const misProductos = [
 
     {
-      id: 1, nombre: "Juguetes rellenables ",
+      id: 1, nombre: "Refillable toys",
       precio: 30.000, 
       imagen: "/imagenes/Juguetes.jpg",
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.", 
+      descripcion: "Refillable dog toys are interactive accessories designed with a hollow interior that can be filled with wet food, kibble, or treats. They function like an edible puzzle, stimulating the intellect, reducing anxiety, and relieving boredom by encouraging the pet to lick or chew to extract the reward..", 
       cantidad:5
     },
       
-    { id: 2, nombre: "Snack Bones", 
-      precio: 20.000, 
+    { id: 20, nombre: "Wet dog food", 
+      precio: 8.000, 
+      imagen: "/imagenes/PEDIGREE.jpg", 
+      descripcion: "Wet dog food is a food rich in water (up to 80%), packaged in cans or airtight envelopes. It combines fresh and natural ingredients such as meats and vegetables, offering a soft texture, intense flavor and high hydration. It is ideal for stimulating appetite, promoting digestion and facilitating chewing.",
+      cantidad: 12
+    },
+    { id: 3, nombre: "Bed", 
+      precio: 50.000, 
+      imagen: "/imagenes/cama2.jpg", 
+      descripcion: "Dog beds and mats are accessories designed to ensure your dog's comfort, protect their joints, and regulate their temperature. They are classified according to their materials and features, with orthopedic, cooling (gel-infused), and elevated options being particularly noteworthy. .",
+      cantidad: 12
+    },
+    { id: 4, nombre: "paw dazzle", 
+      precio: 47.000, 
+      imagen: "/imagenes/rascadordog.jpg", 
+      descripcion: "Specialize in fresh, locally-made dog treats, beautifully iced bakery cookies, collars, toys, and apparel (including bridal wear for pets).A highly-rated, family-owned pet bakery and boutique, or a specialized line of dog-grooming and scratch-board products..",
+      cantidad: 4
+    },
+    { id: 5, nombre: "nn", 
+      precio: 11.000, 
       imagen: "/imagenes/snaks.jpg", 
       descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
       cantidad: 12
     },
+    { id: 6, nombre: "nnn", 
+      precio: 12.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+    { id: 7, nombre: "a", 
+      precio: 13.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+    { id: 8, nombre: "aa", 
+      precio: 12.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+    { id: 9, nombre: "aaa", 
+      precio: 15.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+    { id: 10, nombre: "aaaa", 
+      precio: 16.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+    { id: 11, nombre: "q", 
+      precio: 17.000, 
+      imagen: "/imagenes/snaks.jpg", 
+      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
+      cantidad: 12
+    },
+
   ];
  
 
@@ -216,7 +271,7 @@ const misProductos = [
     <section>  {/* head 4 */}
 
     <section className="parallax-section">
-    <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/labrador2.jpg')" }}></div>
+    <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/labradorright.jpg')" }}></div>
     <h2 className="section-title">DOGS</h2>
     </section>
 
