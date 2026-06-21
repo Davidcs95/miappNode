@@ -21,74 +21,138 @@ const misProductos = [
       cantidad:5
     },
       
-    { id: 20, nombre: "Wet dog food", 
-      precio: 8.000, 
+    { id: 1, nombre: "Wet dog food", 
+      precio: 8.000,
+      categoria: "Dog", 
       imagen: "/imagenes/PEDIGREE.jpg", 
       descripcion: "Wet dog food is a food rich in water (up to 80%), packaged in cans or airtight envelopes. It combines fresh and natural ingredients such as meats and vegetables, offering a soft texture, intense flavor and high hydration. It is ideal for stimulating appetite, promoting digestion and facilitating chewing.",
-      cantidad: 12
+      cantidad: 80
     },
-    { id: 3, nombre: "Bed", 
-      precio: 50.000, 
+    { id: 2, nombre: "Bed", 
+      precio: 100.000,
+      categoria: "Dog", 
       imagen: "/imagenes/cama2.jpg", 
       descripcion: "Dog beds and mats are accessories designed to ensure your dog's comfort, protect their joints, and regulate their temperature. They are classified according to their materials and features, with orthopedic, cooling (gel-infused), and elevated options being particularly noteworthy. .",
-      cantidad: 12
+      cantidad: 6
     },
-    { id: 4, nombre: "paw dazzle", 
-      precio: 47.000, 
+    { id: 3, nombre: "paw dazzle", 
+      precio: 47.000,
+      categoria: "Dog", 
       imagen: "/imagenes/rascadordog.jpg", 
       descripcion: "Specialize in fresh, locally-made dog treats, beautifully iced bakery cookies, collars, toys, and apparel (including bridal wear for pets).A highly-rated, family-owned pet bakery and boutique, or a specialized line of dog-grooming and scratch-board products..",
-      cantidad: 4
+      cantidad: 7
     },
-    { id: 5, nombre: "nn", 
-      precio: 11.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 4, nombre: "feeder", 
+      precio: 60.000, 
+      categoria: "Dog",
+      imagen: "/imagenes/Comederos_bebederos.jpg", 
+      descripcion: "Food and water bowls are essential accessories designed to ensure your dog is properly fed and hydrated. They help maintain good posture, control the rate of food intake, and ensure access to fresh water. Stainless steel: Made of stainless steel or ceramic to maintain hygiene..",
+      cantidad: 40
     },
-    { id: 6, nombre: "nnn", 
-      precio: 12.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 5, nombre: "Collar or Harness", 
+      precio: 58.000, 
+      categoria: "Dog",
+      imagen: "/imagenes/Collar_Arnes.jpg", 
+      descripcion: "A dog collar is an essential safety and control accessory fastened around a dog's neck. It primarily serves as a sturdy anchor for attaching a leash during walks, a platform to display identification tags, and a secure base for specialized devices like GPS trackers or parasite treatments.",
+      cantidad: 24
     },
-    { id: 7, nombre: "a", 
-      precio: 13.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 6, nombre: "Bags and dispenser", 
+      precio: 15.000,
+      categoria: "Dog", 
+      imagen: "/imagenes/Bolsas_dispensador.jpg", 
+      descripcion: "A dog waste bag dispenser is a portable accessory that attaches to a leash or backpack for conveniently carrying rolls of bags. Designed to collect waste during walks, it allows for quick and clean bag removal.",
+      cantidad: 30
     },
-    { id: 8, nombre: "aa", 
-      precio: 12.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 7, nombre: "blanket", 
+      precio: 38.000,
+      categoria: "Dog", 
+      imagen: "/imagenes/Manta_Cobija.jpg", 
+      descripcion: "A dog blanket (manta o cobija) is a cozy, insulating accessory designed to provide warmth, comfort, and security. Perfect for lining beds, sofas, or crates, they typically feature soft, pet-safe materials and are highly machine-washable.",
+      cantidad: 10
     },
-    { id: 9, nombre: "aaa", 
-      precio: 15.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 8, nombre: "kennel", 
+      precio: 55.000,
+      categoria: "Dog", 
+      imagen: "/imagenes/Transportín_guacal.jpg", 
+      descripcion: "A transportín or guacal (kennel) is a portable, enclosed container used to safely and comfortably transport dogs. It provides a secure den-like environment for travel, vet visits, or crate training, and is strictly required by airlines to meet specific safety standards..",
+      cantidad: 2
     },
-    { id: 10, nombre: "aaaa", 
-      precio: 16.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 9, nombre: "Dog shampoo and conditioner", 
+      precio: 16.000,
+      categoria: "Dog", 
+      imagen: "/imagenes/Champu_acondicionador.jpg", 
+      descripcion: "Dog shampoo and conditioner are hygiene products formulated to cleanse dirt, control odors, and maintain your pet's skin pH balance. Using both products nourishes the coat, prevents dryness, detangles fur, and makes brushing easier..",
+      cantidad: 8
     },
-    { id: 11, nombre: "q", 
-      precio: 17.000, 
-      imagen: "/imagenes/snaks.jpg", 
-      descripcion: "Juguete resistente ideal para mantener a tu perro entretenido por horas.",
-      cantidad: 12
+    { id: 10, nombre: "Comb", 
+      precio: 22.000, 
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      categoria: "Dog",
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+    { id: 11, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+     { id: 12, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+     { id: 13, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+     { id: 14, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+     { id: 15, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+     { id: 16, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
+    },
+
+     { id: 17, nombre: "Comb", 
+      precio: 22.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/Cepillo_peine.jpg", 
+      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      cantidad: 50
     },
 
   ];
- 
 
+  const productosDog = misProductos.filter(p => p.categoria === 'Dog');
+  const productosCat = misProductos.filter(p => p.categoria === 'Cat');
 
-
-
-  // funcion para formulario
+// funcion para formulario
   const handleScroll = () => {
   const element = document.getElementById("formulario-registro");
   if (element) {
@@ -100,12 +164,8 @@ const misProductos = [
  
   return (
 
-    
-
   <div> 
 
-
-    
 
     <section>  {/* head 1 */}
       {/* Contenedor del encabezado (Barra Azul) */}
@@ -278,8 +338,9 @@ const misProductos = [
     <div className='tarjetas1'>
 
     <div className="tarjetas2">
-      <h1>Nuestros Productos</h1>
-      <ProductCarousel productos={misProductos} />
+      <h1>Our products</h1>
+      <ProductCarousel productos={productosDog} />
+      
       <button onClick={handleScroll}>Ir al formulario</button>
     </div>
    
@@ -296,6 +357,25 @@ const misProductos = [
 
 
 
+   <section> {/* head 5 */}
+
+   <section className="parallax-section">
+          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/backgato.jpg')" }}></div>
+          <h2 className="section-title">CATS</h2>
+        </section>
+        <div className='tarjetas1'>
+          <div className="tarjetas2">
+            <h1>Our Cat Products</h1>
+            <ProductCarousel productos={productosCat} />
+          </div>
+        </div>
+
+
+
+
+   </section>
+
+   
    <section>
 
 

@@ -49,7 +49,7 @@ const ProductCarousel = ({ productos }) => {
         pagination={{ clickable: true }}
       >
         {productos.map((producto) => (
-          <SwiperSlide key={`prod-${producto.id || Math.random()}`}>
+          <SwiperSlide key={producto.id}>
             <div className="card">
               <img src={producto.imagen} alt={producto.nombre} />
               

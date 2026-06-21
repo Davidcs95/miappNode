@@ -52,3 +52,12 @@ section-title {
   object-fit: cover; /* ¡Esta es la clave! Ajusta la imagen recortando los bordes en lugar de estirarla */
   object-position: center; /* Centra la imagen para que se vea la cara del animal */
 }
+
+
+
+
+.tarjetas2 h1 {
+
+
+  color: #ff9800;
+}
