@@ -92,58 +92,58 @@ const misProductos = [
       cantidad: 50
     },
 
-    { id: 11, nombre: "Comb", 
-      precio: 22.000, 
+    { id: 11, nombre: "Dry food", 
+      precio: 5.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      imagen: "/imagenes/foodcat.jpg", 
+      descripcion: "Is dehydrated food with only 6% to 11% moisture. It's a popular choice for pets because of its long shelf life and low cost. The crunchy texture helps reduce tartar buildup, although it requires more carbohydrates to produce.",
       cantidad: 50
     },
 
-     { id: 12, nombre: "Comb", 
-      precio: 22.000, 
+     { id: 12, nombre: "Feeders and waterers", 
+      precio: 80.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
-      cantidad: 50
+      imagen: "/imagenes/comederocat.jpg", 
+      descripcion: "Feeders and waterers are containers or automatic systems designed to provide food and fresh water continuously or periodically to animals. They prevent waste, maintain hygiene, and ensure animal welfare and nutrition.",
+      cantidad: 15
     },
-     { id: 13, nombre: "Comb", 
+     { id: 13, nombre: "Arenero", 
       precio: 22.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
-      cantidad: 50
-    },
-
-     { id: 14, nombre: "Comb", 
-      precio: 22.000, 
-      categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
-      cantidad: 50
+      imagen: "/imagenes/arenaa.jpg", 
+      descripcion: "An arenero (bandeja sanitaria) is a specialized indoor container where pets, primarily cats, relieve themselves. The arena (o sustrato) is the absorbent material placed inside, which triggers their instinct to dig and cover their waste..",
+      cantidad: 90
     },
 
-     { id: 15, nombre: "Comb", 
-      precio: 22.000, 
+     { id: 14, nombre: "scoop", 
+      precio: 9.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
-      cantidad: 50
+      imagen: "/imagenes/pala.jpg", 
+      descripcion: "A litter scoop is an essential tool for maintaining your cat's litter box. Its design acts like a sieve, allowing you to easily remove solid waste while letting clean litter fall back into the box, optimizing hygiene and reducing litter consumption..",
+      cantidad: 140
     },
 
-     { id: 16, nombre: "Comb", 
-      precio: 22.000, 
+     { id: 15, nombre: "Cat hammocks", 
+      precio: 70.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
-      cantidad: 50
+      imagen: "/imagenes/camacat.jpg", 
+      descripcion: "Cat hammocks and cunas (cat beds) are designed to provide felines with secure, comfortable retreats. Hammocks elevate cats to satisfy their love for heights and bird-watching, while cunas offer enclosed, padded spaces for nesting. Both utilize soft materials.",
+      cantidad: 30
     },
 
-     { id: 17, nombre: "Comb", 
+     { id: 16, nombre: "Cat scratcher", 
+      precio: 90.000, 
+      categoria: "Cat",
+      imagen: "/imagenes/rascadorcat.jpg", 
+      descripcion: "A cat scratcher (rascador) is an essential feline accessory designed to satisfy a cat's natural urge to scratch. It protects your furniture while providing an outlet for stress, stretching, and marking territory. Helps remove old claw sheaths and keeps nails sharp.",
+      cantidad: 80
+    },
+
+     { id: 17, nombre: "Clothing", 
       precio: 22.000, 
       categoria: "Cat",
-      imagen: "/imagenes/Cepillo_peine.jpg", 
-      descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
+      imagen: "/imagenes/ropacat.jpg", 
+      descripcion: "Cat clothing is specially designed apparel for felines, ranging from lightweight cotton t-shirts and fleece sweaters to protective recovery suits. While some styles are for fashion, most serve practical purposes like keeping hairless breeds warm, shielding shaved skin, or preventing cats from licking surgical.",
       cantidad: 50
     },
 
@@ -160,7 +160,8 @@ const misProductos = [
     
   }
 };
-
+ console.log("Perros filtrados:", productosDog);
+ console.log("Gatos filtrados:", productosCat);
  
   return (
 
