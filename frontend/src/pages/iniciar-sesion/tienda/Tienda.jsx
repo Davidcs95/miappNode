@@ -9,6 +9,7 @@ import './section4.css';
 import './productos.css';
 import ProductCarousel from './productos';
 import InfoTarjeta from './InfoTarjeta';
+import InfoTarjeta2 from './InfoTarjeta2';
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 const misProductos = [
@@ -146,11 +147,65 @@ const misProductos = [
       descripcion: "Cat clothing is specially designed apparel for felines, ranging from lightweight cotton t-shirts and fleece sweaters to protective recovery suits. While some styles are for fashion, most serve practical purposes like keeping hairless breeds warm, shielding shaved skin, or preventing cats from licking surgical.",
       cantidad: 50
     },
+    { id: 18, nombre: "Pig food", 
+      precio: 22.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/pigfood.jpg", 
+      descripcion: "Pig feed is a balanced diet that combines energy sources (such as corn or sorghum), protein (soybean meal or meat by-products), and mineral supplements. The formulas are tailored to the animal's life stage (breeding, growing, or finishing) to ensure rapid development and high-quality meat..",
+      cantidad: 50
+    },
+
+
+    { id: 19, nombre: "Chicken feeders", 
+      precio: 29.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/comederogallina.jpg", 
+      descripcion: "Chicken feeders are containers designed to provide food continuously and in an orderly manner. Their main purpose is to optimize feed consumption, prevent birds from wasting or contaminating it by scratching, and ensure that all chickens have enough space to feed.",
+      cantidad: 500
+    },
+
+    { id: 20, nombre: "Horse Health Red Cell", 
+      precio: 77.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/suplementohorse.jpg", 
+      descripcion: "Horse Health Red Cell is a premium, iron-rich vitamin and mineral supplement designed to support normal blood cell health, cardiovascular function, and energy levels in horse.Energy & Performance: Provides essential nutrients to meet rigorous performance demands and maintain stamina.",
+      cantidad: 71
+    },
+    { id: 21, nombre: "licopan Energy", 
+      precio: 88.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/caballosumplemento2.jpg", 
+      descripcion: "licopan Energy is a premium veterinary supplement designed to provide rapid energy and nutritional support for equines (horses, mules, donkeys) and pigs. Formulated with readily assimilable amino acids, glucose, and essential vitamins (like the B-complex), it is used to stimulate the appetite, accelerate physical recovery, promote weight gain, and improve athletic performance..",
+      cantidad: 96
+    },
+    { id: 22, nombre: "Solla Ponedoras", 
+      precio: 37.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/gallinafood.jpg", 
+      descripcion: "Solla Ponedoras is a line of specialized commercial poultry feed designed to maximize egg production, ensure excellent conversion rates, and produce high-quality eggs with strong shells and vibrant yolk color. The feeds are tailored to support hens through their critical laying phases, from early production to the late stages..",
+      cantidad: 30
+    },
+    { id: 23, nombre: "The Agrofácil Nipple Drinker", 
+      precio: 44.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/bebederochicken.jpg", 
+      descripcion: "The Agrofácil Nipple Drinker with Coupling is a teat-type water supply system designed for efficient and clean drinking in poultry. It allows animals to drink by pecking at the valve, ensuring fresh water without spills..",
+      cantidad: 400
+    },
+
+    { id: 24, nombre: "Pig feeders", 
+      precio: 100.000, 
+      categoria: "Animal",
+      imagen: "/imagenes/pigfood2.jpg", 
+      descripcion: "Pig feeders are essential structures designed to provide feed continuously or in rations. They optimize feed intake, minimize waste, and prevent feed contamination. They are adapted to the stage of development and the type of feeding system.",
+      cantidad: 250
+    },
 
   ];
 
   const productosDog = misProductos.filter(p => p.categoria === 'Dog');
   const productosCat = misProductos.filter(p => p.categoria === 'Cat');
+  const productosAnimal = misProductos.filter(p => p.categoria === 'Animal');
 
 // funcion para formulario
   const handleScroll = () => {
@@ -162,6 +217,7 @@ const misProductos = [
 };
  console.log("Perros filtrados:", productosDog);
  console.log("Gatos filtrados:", productosCat);
+ console.log("Animal filtrados:", productosAnimal);
  
   return (
 
@@ -380,14 +436,33 @@ const misProductos = [
           </div>
         </div>
 
+         <div className='contenido2'>
 
+          <InfoTarjeta2 />
+
+
+         </div>
 
 
    </section>
 
    
 
+   <section> {/* head 6 */}
 
+   <section className="parallax-section">
+          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}></div>
+          <h2 className="section-title">Animals</h2>
+        </section>
+        <div className='tarjetas1'>
+          <div className="tarjetas2">
+            <h1>Our Products</h1>
+            <ProductCarousel productos={productosAnimal} />
+          </div>
+        </div>
+
+
+   </section>
 
 
 

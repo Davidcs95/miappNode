@@ -40,7 +40,7 @@ const InfoTarjeta = () => {
 )}
 
         <button className='btn-info' onClick={() => setExpandido(!expandido)}>
-          {expandido ? "Ver menos" : "Más info"}
+          {expandido ? "Less info" : "More info"}
         </button>
       </div>
     </section>
