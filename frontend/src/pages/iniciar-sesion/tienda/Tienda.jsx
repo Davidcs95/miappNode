@@ -8,7 +8,7 @@ import Carrusel from './Carrusel';
 import './section4.css';
 import './productos.css';
 import ProductCarousel from './productos';
-
+import InfoTarjeta from './InfoTarjeta';
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 const misProductos = [
@@ -205,7 +205,7 @@ const misProductos = [
       <div class="huesos">
           <input className='hueso111'
             type="text"
-            class="input1"
+            className="input1"
             placeholder="What are you looking for?"
         />
     
@@ -350,7 +350,16 @@ const misProductos = [
 
     </div>
 
+    
+    
+  <div className="columna-derecha">
+    <InfoTarjeta />
+  </div>
 
+
+
+
+     
 
 
     </section>
@@ -375,6 +384,14 @@ const misProductos = [
 
 
    </section>
+
+   
+
+
+
+
+
+
 
    
    <section>

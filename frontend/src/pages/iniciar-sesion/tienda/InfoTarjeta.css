@@ -1,0 +1,70 @@
+.tarjeta-informativa {
+  background: #ffffff;
+  border: 2px solid #ff9800;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+
+  /* CAMBIAR ESTO */
+  min-height: 300px;
+  height: auto;
+ font-size: 16px;
+  margin: 5px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.contenido-resumido {
+  width: 100%;
+}
+
+.contenido-resumido h2 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contenido-resumido p {
+  color: #000;
+  width: 100%;
+  display: block;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.contenido-extra {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.columna-izquierda-tarjeta,
+.columna-derecha-tarjeta {
+  flex: 1;
+  background: #fff8ec;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.columna-izquierda-tarjeta strong,
+.columna-derecha-tarjeta strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.btn-info {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.texto-principal {
+  width: 100%;
+  color: black;
+  margin-bottom: 20px;
+}
