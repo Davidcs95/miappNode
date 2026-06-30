@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react'; // <--- IMPORTANTE: Asegúrate de importar useRef
 import { Link } from 'react-router-dom';
 import '../App.css';
 import './Section2.css';
@@ -10,8 +10,14 @@ import './productos.css';
 import ProductCarousel from './productos';
 import InfoTarjeta from './InfoTarjeta';
 import InfoTarjeta2 from './InfoTarjeta2';
+import InfoTarjeta3 from './InfoTarjeta3';
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
+const seccionPerrosRef = useRef(null);
+
+const scrollToPerros = () => {
+  seccionPerrosRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 const misProductos = [
 
     {
@@ -275,6 +281,7 @@ const misProductos = [
         <li className="login">
           <img className="img-iniciar-sesion" src="imagenes/iniciar-sesion.png" alt="" />
           <Link to="/login"> Login</Link>
+          
         </li>
         
         <li className="carrito">
@@ -287,7 +294,7 @@ const misProductos = [
       <div className="nav2">
         <li className="dropdown">
           <img className="#" src="imagenes/perro.png" alt="DOG" /> 
-          <a href="#">DOGS</a>
+          <button onClick={scrollToPerros} className="btn-link-nav">DOGS</button>
           <ul className="submenu">
             <li><a href="#">Toys</a></li>
             <li><a href="#">Food</a></li>
@@ -295,6 +302,7 @@ const misProductos = [
             <li><a href="#">Accessories</a></li>
           </ul>
         </li>
+        
 
         <li className="dropdowntwo">
           <img className="cat" src="imagenes/pata.png" alt="CAT" />
@@ -330,7 +338,9 @@ const misProductos = [
           <img className="find your store" src="imagenes/store-solid.png" alt="" />
           <a href="#"> FIND YOUR STORE</a>
         </li>  
-      </div>        
+      </div> 
+      
+             
     </section>
 
    
@@ -392,29 +402,17 @@ const misProductos = [
     <h2 className="section-title">DOGS</h2>
     </section>
 
-    <div className='tarjetas1'>
-
-    <div className="tarjetas2">
-      <h1>Our products</h1>
-      <ProductCarousel productos={productosDog} />
-      
-      <button onClick={handleScroll}>Ir al formulario</button>
-    </div>
    
 
+   
+      <div ref={seccionPerrosRef}>
+        <h2>Dogs products</h2>
+        <ProductCarousel productos={productosDog} />
 
-
-    </div>
-
-    
-    
-  <div className="columna-derecha">
-    <InfoTarjeta />
-  </div>
-
-
-
-
+        <div className="columna-derecha">
+         <InfoTarjeta />
+        </div>
+      </div>
      
 
 
@@ -461,7 +459,9 @@ const misProductos = [
           </div>
         </div>
 
-
+          <div>
+            <InfoTarjeta3 />
+          </div>
    </section>
 
 

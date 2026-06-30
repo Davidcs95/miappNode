@@ -26,12 +26,15 @@ const Login = ({ setUsuarioLogueado }) => {
         localStorage.setItem('token', data.token);
         localStorage.setItem('usuarioLogueado', JSON.stringify(data.user));
         setUsuarioLogueado(data.user);
+        console.log("Datos del usuario recibidos:", data.user);
+        const nombreUsuario = data.user.username || "Usuario";
 
         // Alerta de éxito con SweetAlert
         Swal.fire({
           icon: 'success',
           title: '¡Bienvenido!',
-          text: 'Has iniciado sesión correctamente.',
+          // CORRECTO: Backticks permiten insertar variables
+          text: `Has iniciado sesión correctamente, ${nombreUsuario}!.`,
           confirmButtonColor: '#ff9800'
         }).then(() => {
           navigate('/'); // Redirige después de cerrar la alerta
@@ -83,7 +86,13 @@ const Login = ({ setUsuarioLogueado }) => {
         <div className="login-footer">
           <Link className="register-link" to="/register">Crear cuenta</Link>
         </div>
+        <div className="contenedor-navegacion">
+                <Link to="/" className="btn-back-home1">
+               ← Back to home
+               </Link>
+         </div>
       </div>
+      
     </div>
   );
 };

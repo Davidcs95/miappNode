@@ -101,3 +101,21 @@ display: flex;
   transform: translateY(-3px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
+
+.btn-link-nav {
+  font-family: pacifico, cursive;
+  font-size: 18px;
+  background-image: url('../imagenes/hUESOS.png');
+  border: none;
+  cursor: pointer;
+  
+  
+}
+
+
+
+
+
+
+
+
