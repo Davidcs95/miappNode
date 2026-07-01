@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.formulario-contenedor {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.formulario-contenedor h2 {
+  text-align: center;
+  color: #0086F2; /* Usando tu azul principal */
+  margin-bottom: 25px;
+}
+
+/* Estilo para todos los inputs y selects */
+.formulario-contenedor input, 
+.formulario-contenedor select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.formulario-contenedor input:focus, 
+.formulario-contenedor select:focus {
+  border-color: #0086F2;
+  outline: none;
+}
+
+/* Estilo del botón */
+.formulario-contenedor button {
+  width: 100%;
+  padding: 15px;
+  background-color: #0086F2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contenedor button:hover {
+  background-color: #006bbd;
+}
+
+/* Animación suave para que los campos nuevos aparezcan bien */
+.formulario-contenedor input, .formulario-contenedor select {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.formulario-contenedor {
+  border-top: 5px solid #0086F2; /* Una franja azul superior */
+}
+
+
+.checkbox-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkbox-contenedor input {
+  width: auto; /* Para que el checkbox no ocupe el 100% */
+  margin: 0;
+}

@@ -7,6 +7,8 @@
 .swiper-slide {
   width: 500px; /* Tamaño real de la tarjeta */
   height: 500px;
+  
+  margin-bottom: 200px;
 }
 
 .swiper-slide img {

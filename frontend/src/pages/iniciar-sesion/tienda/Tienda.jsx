@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'; // <--- IMPORTANTE: Asegúrate de importar useRef
+import React, { useRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import '../App.css';
 import './Section2.css';
@@ -11,13 +11,47 @@ import ProductCarousel from './productos';
 import InfoTarjeta from './InfoTarjeta';
 import InfoTarjeta2 from './InfoTarjeta2';
 import InfoTarjeta3 from './InfoTarjeta3';
+import FormularioRegistro from '../FormularioRegistro';
+
+
 
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
+const [showButton, setShowButton] = useState(false);
 const seccionPerrosRef = useRef(null);
+const seccionCatsRef = useRef(null);
+const seccionAnimalsRef = useRef(null);
 
+
+// 2. Efecto para el botón de volver arriba
+
+useEffect(() => {
+    const handleScroll = () => {
+      const isVisible = window.scrollY > 300;
+      console.log("¿Botón visible?:", isVisible);
+      setShowButton(isVisible);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 const scrollToPerros = () => {
   seccionPerrosRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const scrollToCats = () => { // Nueva función
+  seccionCatsRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+
+
+const scrollToAnimals = () => {
+  seccionAnimalsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
 const misProductos = [
 
     {
@@ -225,6 +259,8 @@ const misProductos = [
  console.log("Gatos filtrados:", productosCat);
  console.log("Animal filtrados:", productosAnimal);
  
+  
+
   return (
 
   <div> 
@@ -292,21 +328,23 @@ const misProductos = [
 
       {/* Contenedor de navegación (Menús de animales) */}
       <div className="nav2">
+        
         <li className="dropdown">
           <img className="#" src="imagenes/perro.png" alt="DOG" /> 
-          <button onClick={scrollToPerros} className="btn-link-nav">DOGS</button>
+          <button onClick={scrollToPerros} className="btn-link-nav">Dogs</button>
           <ul className="submenu">
             <li><a href="#">Toys</a></li>
             <li><a href="#">Food</a></li>
             <li><a href="#">Beds</a></li>
             <li><a href="#">Accessories</a></li>
           </ul>
+          
         </li>
         
 
         <li className="dropdowntwo">
           <img className="cat" src="imagenes/pata.png" alt="CAT" />
-          <Link to="/"> CATS</Link>
+          <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
           <ul className="submenu2">
             <li><a href="#">Toys</a></li>
             <li><a href="#">Food</a></li>
@@ -318,7 +356,7 @@ const misProductos = [
 
         <li className="dropdownthree">
           <img className="ganado" src="imagenes/ganado 2.png" alt="otros" />
-          <a href="#"> OTHERS ANIMALS</a>
+         <button onClick={scrollToAnimals} className="btn-link-nav">Others Animals</button>
           <ul className="submenu3">
             <li><a href="#">Birds</a></li>
             <li><a href="#">Fishes</a></li>
@@ -337,7 +375,18 @@ const misProductos = [
         <li className="find-store">
           <img className="find your store" src="imagenes/store-solid.png" alt="" />
           <a href="#"> FIND YOUR STORE</a>
-        </li>  
+        </li>
+         
+
+        {showButton && (
+  <button className="btn-back-to-top" onClick={scrollToTop}>
+    ↑
+  </button>
+)}
+
+
+
+
       </div> 
       
              
@@ -419,22 +468,23 @@ const misProductos = [
     </section>
 
 
-
-
    <section> {/* head 5 */}
 
    <section className="parallax-section">
           <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/backgato.jpg')" }}></div>
           <h2 className="section-title">CATS</h2>
         </section>
-        <div className='tarjetas1'>
-          <div className="tarjetas2">
-            <h1>Our Cat Products</h1>
-            <ProductCarousel productos={productosCat} />
-          </div>
-        </div>
+
+
+
+        <div ref={seccionCatsRef} className="seccion-cats-container">
+          <h2>Cats products</h2>
+             <ProductCarousel productos={productosCat} />
+             </div>
+        
 
          <div className='contenido2'>
+          
 
           <InfoTarjeta2 />
 
@@ -452,12 +502,14 @@ const misProductos = [
           <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}></div>
           <h2 className="section-title">Animals</h2>
         </section>
-        <div className='tarjetas1'>
-          <div className="tarjetas2">
-            <h1>Our Products</h1>
-            <ProductCarousel productos={productosAnimal} />
-          </div>
-        </div>
+
+
+
+
+         <div ref={seccionAnimalsRef} className="seccion-Animal-container">
+          <h2>Others animals products</h2>
+           <ProductCarousel productos={productosAnimal} />
+           </div>
 
           <div>
             <InfoTarjeta3 />
@@ -470,9 +522,11 @@ const misProductos = [
 
    
    <section>
+    <div id="formulario-registro">
+    <FormularioRegistro />
+   </div>
 
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic id nam doloremque cum porro deserunt voluptatem temporibus! Quia enim eos esse expedita nam repudiandae explicabo laudantium architecto, magnam nostrum libero sequi asperiores eaque rerum tenetur, dicta officia? Adipisci ducimus itaque labore at aliquam, sit quis dolores dolore, dignissimos dolorem omnis vel temporibus. Eius libero sit doloremque alias, corrupti commodi tenetur, aliquam facilis neque ex dolore consequuntur deserunt numquam rerum minus! Nulla voluptates iusto, porro, amet error dolorum unde nobis ipsa sed, recusandae obcaecati ipsum perferendis eveniet illum exercitationem delectus laborum harum temporibus ullam facere sapiente incidunt magni eum non. Minima minus velit nihil laudantium accusamus deleniti ipsam necessitatibus obcaecati quae labore quam, repellat sapiente suscipit deserunt consectetur enim vel dolor commodi a soluta in nobis quis saepe distinctio. Necessitatibus animi dicta quo laborum suscipit hic? Facere, quaerat eaque illum veniam assumenda nostrum dolores non optio itaque, velit adipisci inventore repudiandae voluptatem! Quae officiis excepturi, totam necessitatibus modi dignissimos incidunt eius! Deleniti perferendis optio distinctio id cumque esse aliquam maiores nobis voluptas vel reprehenderit impedit, alias asperiores. At ad maiores quam delectus autem exercitationem modi magnam. Vel quos temporibus, eius atque, architecto cum neque nam similique, tenetur consequatur blanditiis perspiciatis necessitatibus dolores maxime! Itaque aliquid excepturi dolor repudiandae fuga aliquam officia ullam facilis explicabo veniam obcaecati, quod pariatur ad, quidem nemo ipsam. Voluptatem tenetur error, exercitationem commodi possimus ea! Perspiciatis ad aliquid culpa iusto quo ipsam autem aspernatur sint id temporibus, reiciendis alias rerum? Corrupti, minus laborum illum modi omnis quis nostrum doloribus eius laboriosam exercitationem quibusdam accusamus veritatis laudantium ipsum aspernatur explicabo ad, quaerat dolor dolorum dolores facilis? Voluptates velit iure inventore, fugiat rem ratione omnis eum? Tempore ratione unde sapiente ipsum totam officia vero tenetur sequi voluptates architecto autem rerum, qui ipsa consectetur distinctio. Perspiciatis quo ab veritatis nulla. Neque exercitationem quam quisquam natus esse id consectetur vero sit repellat maxime voluptatem at soluta magnam harum nihil totam temporibus, culpa veniam similique expedita sint, ex laborum hic. Sit soluta architecto fugiat vel ullam repellendus odio aut eaque doloribus, quo, quas, rerum atque reprehenderit nisi quia iste assumenda id laborum recusandae dolore et dolorum consectetur eveniet earum. Repellat facere numquam velit corporis molestiae ea blanditiis reprehenderit cum porro! Quia placeat ipsum aliquid, est tempore nulla maiores dolor, ipsam harum, animi quidem iusto officia. Consequatur nam quisquam, sequi laborum repellendus optio qui possimus ad officiis cum saepe eos eveniet. Eius quidem dolorem recusandae adipisci facilis facere, rem sapiente. Voluptates obcaecati culpa dolorum blanditiis nostrum assumenda, enim similique molestiae et veniam qui perferendis animi, recusandae quas modi nihil eos repudiandae totam cupiditate. Sit natus earum officia delectus repudiandae tempore rem commodi, deserunt similique adipisci, esse dignissimos consequatur voluptatem. Deleniti sequi voluptas, eaque expedita odio ad facere minima dolorem nulla autem beatae quas illo. Recusandae et omnis, ut minus, sunt eaque iste dicta, totam praesentium quos quia! Tempora necessitatibus itaque, ea laboriosam fugit omnis sit nam non dignissimos deserunt sequi dicta suscipit corporis accusamus perferendis officia distinctio quasi quia quod. Reprehenderit, aliquid quibusdam!</p>
+    
    </section>
 
 
