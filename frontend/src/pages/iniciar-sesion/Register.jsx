@@ -26,13 +26,13 @@ const Register = ({ setUsuarios, usuarios }) => {
       const data = await response.json();
 
       if (response.ok) {
-        alert("¡Usuario registrado con éxito en la base de datos!");
+        alert("User successfully registered in the database!");
         // Limpiar formulario
         setEmail('');
         setPassword('');
         setNombre('');
       } else {
-        alert("Error: " + (data.message || "No se pudo registrar"));
+        alert("Error: " + (data.message || "It could not be registered"));
       }
     } catch (error) {
       console.error("Error al conectar con el servidor:", error);
@@ -44,7 +44,7 @@ const Register = ({ setUsuarios, usuarios }) => {
   return (
     
     <div style={{ padding: '48px', maxWidth: '400px', margin: '0 auto', fontFamily: 'sans-serif' }}>
-      <h2>¡Filomena store! - Crear Cuenta</h2>
+      <h2>¡Filomena store! - Create Account</h2>
       
       <form onSubmit={handleRegister} style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }}>
         {/* Campo Nombre */}
@@ -72,21 +72,21 @@ const Register = ({ setUsuarios, usuarios }) => {
           <label style={{ display: 'block', marginBottom: '5px' }}>Password:</label>
           <input type="password" 
             value={password}
-            placeholder="Crea una contraseña" 
+            placeholder="Create a password" 
             onChange={(e) => setPassword(e.target.value)}
             style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
         </div>
         
         <button type="submit" 
           style={{ padding: '10px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
-          Registrarse
+          Register
         </button>
       </form>
 
       <div style={{ marginTop: '15px', textAlign: 'center', fontSize: '14px' }}>
-        <span>¿Ya tienes una cuenta? </span>
+        <span>Do you already have an account? </span>
         <Link to="/login" style={{ color: '#007bff', fontWeight: 'bold', textDecoration: 'none' }}>
-          Inicia sesión
+          Log in
         </Link>
       </div>
     </div>

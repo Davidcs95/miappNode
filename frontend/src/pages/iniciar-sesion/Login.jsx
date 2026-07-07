@@ -32,9 +32,9 @@ const Login = ({ setUsuarioLogueado }) => {
         // Alerta de éxito con SweetAlert
         Swal.fire({
           icon: 'success',
-          title: '¡Bienvenido!',
+          title: 'Welcome!',
           // CORRECTO: Backticks permiten insertar variables
-          text: `Has iniciado sesión correctamente, ${nombreUsuario}!.`,
+          text: `You have successfully logged in, ${nombreUsuario}!.`,
           confirmButtonColor: '#ff9800'
         }).then(() => {
           navigate('/'); // Redirige después de cerrar la alerta
@@ -44,8 +44,8 @@ const Login = ({ setUsuarioLogueado }) => {
         // 3. Error controlado por el servidor (ej. credenciales incorrectas)
         Swal.fire({
           icon: 'error',
-          title: 'Error de acceso',
-          text: data.message || 'Correo o contraseña incorrectos.',
+          title: 'Access Error',
+          text: data.message || 'Invalid email or password.',
         });
       }
     } catch (error) {
@@ -53,8 +53,8 @@ const Login = ({ setUsuarioLogueado }) => {
       console.error(error);
       Swal.fire({
         icon: 'error',
-        title: 'Error de conexión',
-        text: 'No se pudo conectar con el servidor. Inténtalo más tarde.',
+        title: 'Connection Error',
+        text: 'Could not connect to the server. Please try again later.',
       });
     }
   };
@@ -62,12 +62,12 @@ const Login = ({ setUsuarioLogueado }) => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">¡Filomena Store! - Iniciar Sesión</h2>
+        <h2 className="login-title">¡Filomena Store! - Log In</h2>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             className="login-input"
             type="email"
-            placeholder="Correo electrónico"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -75,16 +75,16 @@ const Login = ({ setUsuarioLogueado }) => {
           <input
             className="login-input"
             type="password"
-            placeholder="Contraseña"
+            placeholder="Password"
             value={password} 
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button className="login-button" type="submit">Iniciar Sesión</button>
+          <button className="login-button" type="submit">Log In</button>
         </form>
 
         <div className="login-footer">
-          <Link className="register-link" to="/register">Crear cuenta</Link>
+          <Link className="register-link" to="/register">Create Account</Link>
         </div>
         <div className="contenedor-navegacion">
                 <Link to="/" className="btn-back-home1">

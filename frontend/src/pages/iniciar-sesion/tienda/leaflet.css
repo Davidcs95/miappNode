@@ -1,0 +1,43 @@
+/* Contenedor general del mapa */
+.contenedor-mapa {
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.contenedor-mapa h3 {
+  color: #0086F2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el select (el buscador de localidad) */
+.selector-localidad {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #0086F2;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.selector-localidad:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 134, 242, 0.3);
+}
+
+/* Marco del mapa para que se vea elegante */
+.mapa-view {
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden; /* Esto hace que el mapa respete el borde redondeado */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

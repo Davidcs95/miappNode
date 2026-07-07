@@ -12,6 +12,7 @@ import InfoTarjeta from './InfoTarjeta';
 import InfoTarjeta2 from './InfoTarjeta2';
 import InfoTarjeta3 from './InfoTarjeta3';
 import FormularioRegistro from '../FormularioRegistro';
+import Mapa from './Mapa';
 
 
 
@@ -20,6 +21,8 @@ const [showButton, setShowButton] = useState(false);
 const seccionPerrosRef = useRef(null);
 const seccionCatsRef = useRef(null);
 const seccionAnimalsRef = useRef(null);
+const seccionFormRegRef = useRef(null);
+const seccionFindStoreRef = useRef(null);
 
 
 // 2. Efecto para el botón de volver arriba
@@ -47,10 +50,20 @@ const scrollToPerros = () => {
 };
 
 
+
+
 const scrollToAnimals = () => {
   seccionAnimalsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+   const scrollToFormReg = () => { // Nueva función
+  seccionFormRegRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+
+
+ const scrollToFindStore = () => { // Nueva función
+  seccionFindStoreRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
 
 const misProductos = [
 
@@ -357,6 +370,8 @@ const misProductos = [
         <li className="dropdownthree">
           <img className="ganado" src="imagenes/ganado 2.png" alt="otros" />
          <button onClick={scrollToAnimals} className="btn-link-nav">Others Animals</button>
+         
+
           <ul className="submenu3">
             <li><a href="#">Birds</a></li>
             <li><a href="#">Fishes</a></li>
@@ -369,12 +384,13 @@ const misProductos = [
 
         <li className="contact">
           <img className="huella" src="imagenes/huella.png" alt="" />
-          <a href="#"> CONTACT US</a>
+          <button onClick={scrollToFormReg} className="btn-link-nav">Contact Us</button>
+          
         </li>   
 
         <li className="find-store">
           <img className="find your store" src="imagenes/store-solid.png" alt="" />
-          <a href="#"> FIND YOUR STORE</a>
+          <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
         </li>
          
 
@@ -521,15 +537,24 @@ const misProductos = [
 
 
    
-   <section>
-    <div id="formulario-registro">
+   <section> {/* head 7 */}
+    <div id="formulario-registro" ref={seccionFormRegRef}>
     <FormularioRegistro />
    </div>
 
     
    </section>
 
+   <section className='Mapa4'> {/* head 8 */}
+   <div id="find-store" ref={seccionFindStoreRef}>
+   
+   <Mapa />
 
+    </div>
+
+
+
+   </section>
 
 
 

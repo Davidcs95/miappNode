@@ -18,7 +18,7 @@ const FormularioRegistro = () => {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    // Si es checkbox, tomamos 'checked', si no, el 'value'
+    
     setFormData({ 
       ...formData, 
       [name]: type === 'checkbox' ? checked : value 
@@ -29,33 +29,33 @@ const FormularioRegistro = () => {
     <div className="formulario-contenedor" id="formulario-registro">
       <h2>Registro de Mascota</h2>
       <form>
-        <input name="nombrePropietario" placeholder="Tu nombre completo" onChange={handleChange} required />
+        <input name="nombrePropietario" placeholder="Full name" onChange={handleChange} required />
         
     
-        <input name="email" type="email" placeholder="Correo electrónico" onChange={handleChange} required />
+        <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
         
-        <input name="ciudad" placeholder="Ciudad" onChange={handleChange} required />
+        <input name="ciudad" placeholder="City" onChange={handleChange} required />
         <select name="categoria" onChange={handleChange}>
-          <option value="">Selecciona una categoría</option>
-          <option value="perro">Perro</option>
-          <option value="gato">Gato</option>
-          <option value="otros">Otros animales</option>
+          <option value="">Select a category</option>
+          <option value="perro">Dog</option>
+          <option value="gato">Cat</option>
+          <option value="otros">Other animals</option>
         </select>
         {formData.categoria === 'perro' && (
-            <input name="raza" placeholder="Raza del perro" onChange={handleChange} />
+            <input name="raza" placeholder="Dog breed" onChange={handleChange} />
         )}
         {formData.categoria === 'gato' && (
-          <input name="raza" placeholder="Raza del gato" onChange={handleChange} />
+          <input name="raza" placeholder="cat breed" onChange={handleChange} />
         )}
 
         {formData.categoria === 'otros' && (
-          <input name="especieOtros" placeholder="¿Qué tipo de animal es?" onChange={handleChange} />
+          <input name="especieOtros" placeholder="What type of animal is it?" onChange={handleChange} />
         )}
 
         {formData.categoria && (
           <>
-            <input name="nombreMascota" placeholder="Nombre de la mascota" onChange={handleChange} />
-            <input name="edad" type="number" placeholder="Edad" onChange={handleChange} />
+            <input name="nombreMascota" placeholder="pet name" onChange={handleChange} />
+            <input name="edad" type="number" placeholder="Age" onChange={handleChange} />
             <input name="color" placeholder="Color" onChange={handleChange} />
           </>
         )}
@@ -71,11 +71,11 @@ const FormularioRegistro = () => {
               checked={formData.autorizaEnvio} 
               onChange={handleChange} 
             />
-            Autorizo el envío de información a mi correo.
+             I authorize the sending of information to my email.
           </label>
         </div>
 
-        <button type="submit">Enviar Registro</button>
+        <button type="submit">Submit Registration</button>
       </form>
     </div>
   );
