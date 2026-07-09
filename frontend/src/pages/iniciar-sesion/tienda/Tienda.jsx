@@ -23,6 +23,7 @@ const seccionCatsRef = useRef(null);
 const seccionAnimalsRef = useRef(null);
 const seccionFormRegRef = useRef(null);
 const seccionFindStoreRef = useRef(null);
+const seccionRegistroRef = useRef(null);
 
 
 // 2. Efecto para el botón de volver arriba
@@ -63,6 +64,15 @@ const scrollToAnimals = () => {
 
  const scrollToFindStore = () => { // Nueva función
   seccionFindStoreRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
+
+const scrollToRegistro = () => {
+  const element = document.getElementById("formulario-registro");
+  if (seccionRegistroRef.current) {
+    seccionRegistroRef.current.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.error("Error: La referencia es nula. ¡El div no está conectado!");
+  }
 };
 
 const misProductos = [
@@ -276,7 +286,7 @@ const misProductos = [
 
   return (
 
-  <div> 
+  <div className="contenedor-padre"> 
 
 
     <section>  {/* head 1 */}
@@ -404,7 +414,14 @@ const misProductos = [
 
 
       </div> 
-      
+      <a 
+  href="https://wa.me/3229460423" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="whatsapp-float"
+>
+  <img src="./imagenes/whatsapp.png" />
+  </a>
              
     </section>
 
@@ -415,14 +432,20 @@ const misProductos = [
 
 
         <p> ¡Welcome to the ultimate pet paradise! Explore our extensive selection of products and professional services for your pets. Want to stay updated? Click the button below to join our community and learn more."!</p>
-
-       <button 
-        type="button" 
+       
+       
+       
+      
+       <button type="button" 
         className="boton-registro" 
-        onClick={handleScroll}
+        
+        onClick={scrollToFormReg}
        >
+        
        ¡Register here!
+       
        </button>
+       
 
         
 
@@ -538,6 +561,7 @@ const misProductos = [
 
    
    <section> {/* head 7 */}
+    
     <div id="formulario-registro" ref={seccionFormRegRef}>
     <FormularioRegistro />
    </div>

@@ -19,7 +19,8 @@ const tiendas = [
   { id: 4, localidad: 'Bosa', coords: [4.6125, -74.1845], nombre: 'Filomena Bosa' },
   { id: 5, localidad: 'Castilla', coords: [4.6360, -74.1350], nombre: 'Filomena Castilla' },
   { id: 6, localidad: 'Soacha', coords: [4.5800, -74.2150], nombre: 'Filomena Soacha' },
-  { id: 7, localidad: 'Fusagasugá (Montearroyo)', coords: [4.3528, -74.3556], nombre: 'Filomena Montearroyo' }
+  { id: 7, localidad: 'Fusagasugá (Montearroyo)', coords: [4.3528, -74.3556], nombre: 'Filomena Montearroyo' },
+  { id: 8, localidad: 'Madrid (Abundara)', coords: [4.7335, -74.2628], nombre: 'Filomena Abundara' }
 ];
 
 const Mapa = () => {
