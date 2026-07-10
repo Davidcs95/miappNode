@@ -5,6 +5,7 @@ import Login from './pages/iniciar-sesion/Login.jsx';
 import '../style.css'; 
 import Register from './pages/iniciar-sesion/Register.jsx';
 import Cart from './pages/iniciar-sesion/tienda/Cart.jsx';
+import AdminPanel from './pages/iniciar-sesion/AdminPanel.jsx';
 
 function App() {
   // 1. Estado de usuarios (lee del localStorage)
@@ -33,6 +34,9 @@ function App() {
         <Route path="/login" element={<Login usuarios={usuarios} setUsuarioLogueado={setUsuarioLogueado} />} />
         <Route path="/register" element={<Register setUsuarios={setUsuarios} usuarios={usuarios} />} />
         <Route path="/carrito" element={<Cart />} />
+        <Route path="/" element={<Tienda />} />
+        <Route path="/admin" element={<AdminPanel />} />
+        
       </Routes>
     </Router>
   );

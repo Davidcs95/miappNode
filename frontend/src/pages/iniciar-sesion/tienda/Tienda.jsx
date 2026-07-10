@@ -13,6 +13,7 @@ import InfoTarjeta2 from './InfoTarjeta2';
 import InfoTarjeta3 from './InfoTarjeta3';
 import FormularioRegistro from '../FormularioRegistro';
 import Mapa from './Mapa';
+import ProductoCard from '../ProductoCard';
 
 
 
@@ -24,7 +25,7 @@ const seccionAnimalsRef = useRef(null);
 const seccionFormRegRef = useRef(null);
 const seccionFindStoreRef = useRef(null);
 const seccionRegistroRef = useRef(null);
-
+const [productos, setProductos] = useState([]);
 
 // 2. Efecto para el botón de volver arriba
 
@@ -50,7 +51,25 @@ const scrollToPerros = () => {
   seccionCatsRef.current?.scrollIntoView({ behavior: 'smooth' });
 };
 
+useEffect(() => {
+  const cargarProductos = () => {
+    const guardados = JSON.parse(localStorage.getItem('productos')) || [];
+    setProductos(guardados);
+  };
 
+  // Cargamos al entrar
+  cargarProductos();
+}, []);
+
+useEffect(() => {
+    // 1. Intentamos leer lo que guardamos en el localStorage
+    const datosGuardados = localStorage.getItem('productos');
+    
+   
+    if (datosGuardados) {
+      setProductos(JSON.parse(datosGuardados));
+    }
+  }, []);
 
 
 const scrollToAnimals = () => {
@@ -270,7 +289,12 @@ const misProductos = [
   const productosCat = misProductos.filter(p => p.categoria === 'Cat');
   const productosAnimal = misProductos.filter(p => p.categoria === 'Animal');
 
+ 
+
 // funcion para formulario
+
+
+
   const handleScroll = () => {
   const element = document.getElementById("formulario-registro");
   if (element) {
@@ -282,6 +306,8 @@ const misProductos = [
  console.log("Gatos filtrados:", productosCat);
  console.log("Animal filtrados:", productosAnimal);
  
+
+
   
 
   return (
@@ -295,7 +321,7 @@ const misProductos = [
         <div className="titulo">
 
 
-          {/* Usamos <Link> de React Router en lugar de <a> para navegar sin recargar la página */}
+          
           
           
           <Link to="/" className="logo">
@@ -415,7 +441,7 @@ const misProductos = [
 
       </div> 
       <a 
-  href="https://wa.me/3229460423" 
+  href="https://wa.me/573229460423" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="whatsapp-float"
@@ -580,8 +606,46 @@ const misProductos = [
 
    </section>
 
+   <footer className="footer-avanzado">
+  <div className="footer-grid">
+    {/* Columna 1: Branding */}
+    <div className="footer-col">
+      <h3>Filomena Store</h3>
+      <p>El paraíso para tu mascota. Calidad, amor y profesionalismo en cada producto.</p>
+    </div>
 
+    {/* Columna 2: Links */}
+    <div className="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="/tienda">Tienda</a></li>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/nosotros">Sobre Nosotros</a></li>
+      </ul>
+    </div>
 
+    {/* Columna 3: Redes sociales */}
+    <div className="footer-col">
+      <h4>Síguenos</h4>
+      <div className="social-icons">
+        <a href="#" className="icon"><img src="/imagenes/facebook.png" alt="FB" /></a>
+        <a href="#" className="icon"><img src="/imagenes/instagram.png" alt="IG" /></a>
+        <a href="#" className="icon"><img src="/imagenes/twitter.png" alt="X" /></a>
+      </div>
+    </div>
+  </div>
+  <div className="footer-bottom">
+    <p>© 2026 Filomena Store - Creado con pasión para mascotas.</p>
+  </div>
+</footer>
+  
+
+  <section className="contenedor-productos">
+      {productos.map((unProducto) => (
+        <ProductoCard key={unProducto.id} data={unProducto} />
+      ))}
+    </section>
+  );
 
 
 
