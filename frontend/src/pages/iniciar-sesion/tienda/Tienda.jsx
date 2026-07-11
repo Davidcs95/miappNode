@@ -27,6 +27,7 @@ const seccionFindStoreRef = useRef(null);
 const seccionRegistroRef = useRef(null);
 const [productos, setProductos] = useState([]);
 
+
 // 2. Efecto para el botón de volver arriba
 
 useEffect(() => {
@@ -51,25 +52,24 @@ const scrollToPerros = () => {
   seccionCatsRef.current?.scrollIntoView({ behavior: 'smooth' });
 };
 
+
+
+
+
 useEffect(() => {
   const cargarProductos = () => {
     const guardados = JSON.parse(localStorage.getItem('productos')) || [];
     setProductos(guardados);
+    console.log("Productos cargados:", guardados); // Para verificar en consola
   };
 
-  // Cargamos al entrar
   cargarProductos();
 }, []);
 
-useEffect(() => {
-    // 1. Intentamos leer lo que guardamos en el localStorage
-    const datosGuardados = localStorage.getItem('productos');
-    
-   
-    if (datosGuardados) {
-      setProductos(JSON.parse(datosGuardados));
-    }
-  }, []);
+
+
+
+
 
 
 const scrollToAnimals = () => {
@@ -285,10 +285,15 @@ const misProductos = [
 
   ];
 
-  const productosDog = misProductos.filter(p => p.categoria === 'Dog');
-  const productosCat = misProductos.filter(p => p.categoria === 'Cat');
-  const productosAnimal = misProductos.filter(p => p.categoria === 'Animal');
 
+
+  const productosDelAdmin = productos;
+const listaUnificada = [...misProductos, ...productosDelAdmin];
+
+  const productosDog = listaUnificada.filter(p => p.categoria === 'Dog');
+const productosCat = listaUnificada.filter(p => p.categoria === 'Cat');
+const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
+ 
  
 
 // funcion para formulario
@@ -303,7 +308,7 @@ const misProductos = [
   }
 };
  console.log("Perros filtrados:", productosDog);
- console.log("Gatos filtrados:", productosCat);
+ console.log("Cat filtrados:", productosCat);
  console.log("Animal filtrados:", productosAnimal);
  
 
@@ -524,6 +529,9 @@ const misProductos = [
         <ProductCarousel productos={productosDog} />
 
         <div className="columna-derecha">
+          {productos
+                   .filter(p => p.categoria === 'Dog') // Asegúrate que sea 'Dog'
+                   .map(p => <ProductoCard key={p.id} data={p} />)}
          <InfoTarjeta />
         </div>
       </div>
@@ -544,9 +552,11 @@ const misProductos = [
 
         <div ref={seccionCatsRef} className="seccion-cats-container">
           <h2>Cats products</h2>
-             <ProductCarousel productos={productosCat} />
+             
+            <ProductCarousel productos={productosCat} />
+                
              </div>
-        
+         
 
          <div className='contenido2'>
           
@@ -564,7 +574,11 @@ const misProductos = [
    <section> {/* head 6 */}
 
    <section className="parallax-section">
-          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}></div>
+          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}>
+          
+          
+          
+          </div>
           <h2 className="section-title">Animals</h2>
         </section>
 
@@ -574,6 +588,9 @@ const misProductos = [
          <div ref={seccionAnimalsRef} className="seccion-Animal-container">
           <h2>Others animals products</h2>
            <ProductCarousel productos={productosAnimal} />
+           {productos
+        .filter(p => p.categoria === 'Animal') // Aquí filtra solo los que dicen 'otros'
+        .map(p => <ProductoCard key={p.id} data={p} />)}
            </div>
 
           <div>
@@ -640,12 +657,8 @@ const misProductos = [
 </footer>
   
 
-  <section className="contenedor-productos">
-      {productos.map((unProducto) => (
-        <ProductoCard key={unProducto.id} data={unProducto} />
-      ))}
-    </section>
-  );
+  
+  
 
 
 

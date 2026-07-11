@@ -3,31 +3,36 @@ import React, { useState, useEffect } from 'react';
 function AdminPanel() {
   const [productos, setProductos] = useState([]);
   const [nombre, setNombre] = useState('');
+  // 1. Usamos minúsculas aquí para que coincida con los valores del select
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Cat');
 
-  // Cargar datos al abrir la página
   useEffect(() => {
     const guardados = JSON.parse(localStorage.getItem('productos')) || [];
     setProductos(guardados);
   }, []);
 
-  // CREATE (Añadir)
-  
   const agregarProducto = () => {
-  console.log("Intentando agregar:", nombre); // Veremos si 'nombre' tiene valor
-  
-  const nuevoProducto = { id: Date.now(), nombre };
-  const listaActualizada = [...productos, nuevoProducto];
-  
-  console.log("Nueva lista:", listaActualizada); // Veremos qué se está guardando
-  
-  setProductos(listaActualizada);
-  localStorage.setItem('productos', JSON.stringify(listaActualizada));
-  
-  setNombre(''); // Limpiamos el input
-  alert("Producto guardado, revisa el LocalStorage");
-};
+    // Validamos que el nombre no esté vacío
+    if (!nombre.trim()) return alert("El nombre es obligatorio");
 
-  // DELETE (Eliminar)
+    const nuevoProducto = { 
+      id: Date.now(), 
+      nombre: nombre,
+      categoria: categoriaSeleccionada, 
+      cantidad: 10,
+      precio: 10000,
+    };
+
+    // 2. Solo necesitamos una lista actualizada, usamos la que ya tenemos en estado
+    const listaActualizada = [...productos, nuevoProducto];
+    
+    setProductos(listaActualizada);
+    localStorage.setItem('productos', JSON.stringify(listaActualizada));
+    
+    setNombre(''); 
+    alert(`Producto guardado en categoría: ${categoriaSeleccionada}`);
+  };
+
   const eliminarProducto = (id) => {
     const listaActualizada = productos.filter(p => p.id !== id);
     setProductos(listaActualizada);
@@ -42,12 +47,20 @@ function AdminPanel() {
         onChange={(e) => setNombre(e.target.value)} 
         placeholder="Nombre del producto"
       />
+      
+      {/* 3. Selector coherente con los valores del filtro */}
+      <select value={categoriaSeleccionada} onChange={(e) => setCategoriaSeleccionada(e.target.value)}>
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Animal">Animal</option>
+      </select>
+
       <button onClick={agregarProducto}>Subir Producto</button>
 
       <ul>
         {productos.map(p => (
           <li key={p.id}>
-            {p.nombre} 
+            {p.nombre} ({p.categoria})
             <button onClick={() => eliminarProducto(p.id)}>Eliminar</button>
           </li>
         ))}

@@ -58,7 +58,7 @@ const ProductCarousel = ({ productos }) => {
                 <div className="descripcion">{producto.descripcion}</div>
                 
                 <div className="precio-container">
-                  <div className="precio">${producto.precio.toLocaleString('es-CO')}</div>
+                  <div className="precio">${producto.precio?.toLocaleString('es-CO')}</div>
                   <div className="cantidad">Stock: {producto.cantidad} unidades</div>
                 </div>
 
