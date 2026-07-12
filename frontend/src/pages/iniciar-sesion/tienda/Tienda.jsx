@@ -529,9 +529,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
         <ProductCarousel productos={productosDog} />
 
         <div className="columna-derecha">
-          {productos
-                   .filter(p => p.categoria === 'Dog') // Asegúrate que sea 'Dog'
-                   .map(p => <ProductoCard key={p.id} data={p} />)}
+          
          <InfoTarjeta />
         </div>
       </div>
@@ -575,22 +573,18 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
 
    <section className="parallax-section">
           <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}>
-          
-          
-          
           </div>
+
+
+
+
           <h2 className="section-title">Animals</h2>
         </section>
-
-
-
 
          <div ref={seccionAnimalsRef} className="seccion-Animal-container">
           <h2>Others animals products</h2>
            <ProductCarousel productos={productosAnimal} />
-           {productos
-        .filter(p => p.categoria === 'Animal') // Aquí filtra solo los que dicen 'otros'
-        .map(p => <ProductoCard key={p.id} data={p} />)}
+           
            </div>
 
           <div>

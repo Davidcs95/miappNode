@@ -1,0 +1,78 @@
+/* AdminPanel.css */
+.admin-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-container h2 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 30px;
+}
+
+.admin-container input, 
+.admin-container textarea, 
+.admin-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.admin-container input:focus, 
+.admin-container textarea:focus {
+  border-color: #ff9800;
+  outline: none;
+}
+
+/* Estilo del Botón Subir */
+.btn-upload {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-upload:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+/* Lista de productos */
+.admin-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+/* Botón Eliminar con efecto */
+.btn-delete {
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #d63031;
+}

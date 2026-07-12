@@ -6,19 +6,23 @@ import '../style.css';
 import Register from './pages/iniciar-sesion/Register.jsx';
 import Cart from './pages/iniciar-sesion/tienda/Cart.jsx';
 import AdminPanel from './pages/iniciar-sesion/AdminPanel.jsx';
+import LoginAdmin from './pages/iniciar-sesion/LoginAdmin.jsx';
 
 function App() {
   // 1. Estado de usuarios (lee del localStorage)
-   const [usuarios, setUsuarios] = useState(() => {
+   const [isAdmin, setIsAdmin] = useState(() => {
+    return localStorage.getItem('adminAuth') === 'true'; // Inicializa desde localStorage
+  });
+
+  const [usuarios, setUsuarios] = useState(() => {
     const usuariosGuardados = localStorage.getItem('usuarios');
     return usuariosGuardados ? JSON.parse(usuariosGuardados) : [];
   });
 
-  // 2. Estado de usuarioLogueado (va fuera del useState anterior)
   const [usuarioLogueado, setUsuarioLogueado] = useState(() => {
-  const sesionGuardada = localStorage.getItem('usuarioLogueado');
-  return sesionGuardada ? JSON.parse(sesionGuardada) : null;
-});
+    const sesionGuardada = localStorage.getItem('usuarioLogueado');
+    return sesionGuardada ? JSON.parse(sesionGuardada) : null;
+  });
 
 
  const cerrarSesion = () => {
@@ -35,7 +39,7 @@ function App() {
         <Route path="/register" element={<Register setUsuarios={setUsuarios} usuarios={usuarios} />} />
         <Route path="/carrito" element={<Cart />} />
         <Route path="/" element={<Tienda />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin" element={isAdmin ? <AdminPanel /> : <LoginAdmin setIsAdmin={setIsAdmin} />} />
         
       </Routes>
     </Router>
