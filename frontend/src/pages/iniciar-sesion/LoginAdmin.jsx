@@ -1,19 +1,39 @@
-// Ejemplo simple de LoginAdmin
+import React, { useState } from 'react';
+
 const LoginAdmin = ({ setIsAdmin }) => {
+  
+  const [password, setPassword] = useState("");
+  
+
+const cerrarSesionAdmin = () => {
+  localStorage.removeItem('adminAuth'); // 
+  window.location.reload(); 
+};
+
+
+
   const verificar = () => {
-    const pass = prompt("Contraseña de administrador:");
-    if (pass === "Filomena2026*") { // Tu contraseña
+    if (password === "Filomena2026*") {
       setIsAdmin(true);
       localStorage.setItem('adminAuth', 'true');
     } else {
-      alert("Acceso denegado");
+      alert("Incorrect password");
+      setPassword(""); // Limpiamos el input
     }
   };
 
   return (
-    <div style={{ padding: '50px', textAlign: 'center' }}>
-      <h2>Acceso Administrativo</h2>
-      <button onClick={verificar}>Ingresar Clave</button>
+    <div style={{ padding: '50px', textAlign: 'center', maxWidth: '400px', margin: 'auto' }}>
+      <h2>Administrative Access</h2>
+      <input 
+        type="password" 
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Enter the key"
+        style={{ padding: '10px', width: '100%', marginBottom: '10px' }}
+      />
+      <button className='btn-logout' onClick={verificar} style={{ padding: '10px 20px' }}>Log in</button>
+      
     </div>
   );
 };

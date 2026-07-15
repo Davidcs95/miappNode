@@ -20,7 +20,7 @@ const ProductoCard = ({ data }) => {
       </div>
 
       {/* 5. Botón */}
-      <button className="button2">Agregar al carrito</button>
+      <button className="button2">Add to cart</button>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+. ¿Qué son las Vistas Protegidas?
+Son partes de tu aplicación que no deben ser visibles para usuarios no autorizados. Por ejemplo, un "Panel de Admin" o un "Perfil de usuario" no deben cargarse si el usuario no ha iniciado sesión. En Angular, esto se logra impidiendo la navegación hacia esas rutas específicas.
+
+3. ¿Qué son los Guards en Angular?
+Los Guards (Guardianes) son clases que sirven como "porteros" de tus rutas. Implementan interfaces como CanActivate y deciden si un usuario puede o no entrar a una ruta.
+
+Funcionamiento: Antes de cargar un componente, Angular pregunta al Guard: "¿Está permitido pasar?". Si el guard devuelve true, la ruta se carga; si devuelve false, se redirige al usuario al Login.
+
+4. ¿Qué es Interpolar?
+La interpolación es la técnica para mostrar datos del componente (.ts) en la vista (.html). Se utiliza la sintaxis de llaves dobles {{ }}.
+
+Ejemplo: Si en tu componente tienes nombre = 'Juan', en el HTML escribes <h1>Hola {{ nombre }}</h1> y Angular reemplazará automáticamente el contenido.
+
+5. ¿Qué son *ngIf y *ngFor?
+Son Directivas Estructurales, lo que significa que cambian el diseño del DOM (añaden o eliminan elementos).
+
+*ngIf (Condicional): Renderiza un elemento solo si una condición es verdadera.
+
+Ejemplo: <div *ngIf="isLoggedIn">Bienvenido, usuario</div>
+
+*ngFor (Bucle): Recorre una lista o array y crea un elemento HTML por cada ítem.
+
+Ejemplo: <ul> <li *ngFor="let prod of productos">{{ prod.nombre }}</li> </ul>

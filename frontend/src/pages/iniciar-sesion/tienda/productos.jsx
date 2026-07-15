@@ -24,12 +24,12 @@ const ProductCarousel = ({ productos }) => {
 
 
     Swal.fire({
-    title: '¡Agregado!',
-    text: `${producto.nombre} está en tu carrito.`,
+    title: 'Added!',
+    text: `${producto.nombre} is in your cart.`,
     icon: 'success',
     showCancelButton: true, // Esto crea el botón "Next"
-    confirmButtonText: 'Ver carrito',
-    cancelButtonText: 'Seguir comprando',
+    confirmButtonText: 'See cart',
+    cancelButtonText: 'Continue shopping',
     confirmButtonColor: '#ff9800',
     }).then((result) => {
     if (result.isConfirmed) {
@@ -59,7 +59,7 @@ const ProductCarousel = ({ productos }) => {
                 
                 <div className="precio-container">
                   <div className="precio">${producto.precio?.toLocaleString('es-CO')}</div>
-                  <div className="cantidad">Stock: {producto.cantidad} unidades</div>
+                  <div className="cantidad">Stock: {producto.cantidad} units</div>
                 </div>
 
                 <button 
@@ -67,7 +67,7 @@ const ProductCarousel = ({ productos }) => {
                   // 2. Aquí llamamos a la función pasando el producto específico
                   onClick={() => handleAgregarCarrito(producto)}
                 >
-                  Agregar al carrito
+                  Add to cart
                 </button>
               </div>
             </div>

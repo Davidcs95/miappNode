@@ -12,7 +12,7 @@ const Login = ({ setUsuarioLogueado }) => {
     e.preventDefault();
 
     try {
-      // 1. Ejecutamos la petición al servidor
+      
       const response = await fetch('http://localhost:3000/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

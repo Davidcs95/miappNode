@@ -1,0 +1,8 @@
+Para instalar el sweet alert se debe seguir una serie de pasos :
+Debes instalar en la libreria npm install sweetalert2. Ahora ya que lo tienes en tu proyecto, puedes importarlo en el archivo donde deseas utilizarlo. Por ejemplo, si estás trabajando en un componente de React, puedes hacer lo siguiente:. Por ejemplo, si estás trabajando en un componente de React, puedes hacer lo siguiente:  lo importas en - import Swal from 'sweetalert2'; -
+En cambio de usar alert("mensaje") usas Swal.fire({
+  title: '¡Éxito!',
+  text: 'Tu mensaje aquí',
+  icon: 'success',
+  confirmButtonText: 'Aceptar'
+});

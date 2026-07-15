@@ -1,5 +1,5 @@
-import './AdminPanel.css';
 import React, { useState, useEffect } from 'react';
+import './AdminPanel.css';
 
 function AdminPanel() {
   const [productos, setProductos] = useState([]);
@@ -15,32 +15,30 @@ function AdminPanel() {
     setProductos(guardados);
   }, []);
 
-  const agregarProducto = () => {
-    // Validamos que el nombre no esté vacío
-    if (!nombre.trim()) return alert("El nombre es obligatorio");
-
-    const nuevoProducto = { 
-    id: Date.now(), 
-    nombre: nombre,
-    categoria: categoriaSeleccionada, 
-    cantidad: cantidad, 
-    precio: precio, 
-    descripcion: descripcion, 
-    imagen: imagen            
+  const cerrarSesionAdmin = () => {
+    localStorage.removeItem('adminAuth');
+    window.location.reload();
   };
 
-  
+  const agregarProducto = () => {
+    if (!nombre.trim()) return alert("The name is required");
+
+    const nuevoProducto = { 
+      id: Date.now(), 
+      nombre, 
+      categoria: categoriaSeleccionada, 
+      cantidad, 
+      precio, 
+      descripcion, 
+      imagen 
+    };
+
     const listaActualizada = [...productos, nuevoProducto];
-    
     setProductos(listaActualizada);
     localStorage.setItem('productos', JSON.stringify(listaActualizada));
     
-    setNombre(''); 
-    setImagen('');
-    setDescripcion('');
-    setPrecio('');
-    setCantidad('');
-    alert(`Producto guardado en categoría: ${categoriaSeleccionada}`);
+    setNombre(''); setImagen(''); setDescripcion(''); setPrecio(''); setCantidad('');
+    alert("Producto guardado");
   };
 
   const eliminarProducto = (id) => {
@@ -51,51 +49,32 @@ function AdminPanel() {
 
   return (
     <div className="admin-container">
-      <h2>Panel de Administración</h2>
-      <input 
-        value={nombre} 
-        onChange={(e) => setNombre(e.target.value)} 
-        placeholder="Nombre del producto"
-      />
+      <h2>Administration Panel</h2>
       
+      {/* INPUTS */}
+      <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Name" />
       
-      {/* 3. Selector coherente con los valores del filtro */}
       <select value={categoriaSeleccionada} onChange={(e) => setCategoriaSeleccionada(e.target.value)}>
         <option value="Cat">Cat</option>
         <option value="Dog">Dog</option>
         <option value="Animal">Animal</option>
       </select>
-      
-      <input 
-      value={imagen} 
-      onChange={(e) => setImagen(e.target.value)} 
-      placeholder="URL de la imagen (ej: /imagenes/producto.jpg)"
-    />
-    <textarea 
-      value={descripcion} 
-      onChange={(e) => setDescripcion(e.target.value)} 
-      placeholder="Descripción del producto"
-    />
-    <input 
-      value={precio} 
-      onChange={(e) => setPrecio(e.target.value)} 
-      placeholder="Precio del producto"
-    />
-    <input 
-      value={cantidad} 
-      onChange={(e) => setCantidad(e.target.value)} 
-      placeholder="Cantidad en stock"
-    />
 
+      <input value={imagen} onChange={(e) => setImagen(e.target.value)} placeholder="Image URL" />
+      <textarea value={descripcion} onChange={(e) => setDescripcion(e.target.value)} placeholder="Description" />
+      <input value={precio} onChange={(e) => setPrecio(e.target.value)} placeholder="Price" />
+      <input value={cantidad} onChange={(e) => setCantidad(e.target.value)} placeholder="Quantity" />
 
+      {/* BOTONES */}
+      <button className="btn-upload" onClick={agregarProducto}>Submit Product</button>
+      <button className="btn-logout" onClick={cerrarSesionAdmin}>Logout</button>
 
-      <button onClick={agregarProducto}>Subir Producto</button>
-
+      {/* LISTA */}
       <ul>
         {productos.map(p => (
           <li key={p.id}>
             {p.nombre} ({p.categoria})
-            <button onClick={() => eliminarProducto(p.id)}>Eliminar</button>
+            <button className="btn-delete" onClick={() => eliminarProducto(p.id)}>Delete</button>
           </li>
         ))}
       </ul>
