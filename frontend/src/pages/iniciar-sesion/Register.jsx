@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 // 1. Agregamos "async" antes de (e)
 const Register = ({ setUsuarios, usuarios }) => {
@@ -26,17 +27,29 @@ const Register = ({ setUsuarios, usuarios }) => {
       const data = await response.json();
 
       if (response.ok) {
-        alert("User successfully registered in the database!");
+        Swal.fire({
+          icon: 'success',
+          title: 'Registration Successful',
+          text: 'User successfully registered in the database!'
+        });
         // Limpiar formulario
         setEmail('');
         setPassword('');
         setNombre('');
       } else {
-        alert("Error: " + (data.message || "It could not be registered"));
+        Swal.fire({
+          icon: 'error',
+          title: 'Registration Failed',
+          text: "Error: " + (data.message || "It could not be registered")
+        });
       }
     } catch (error) {
       console.error("Error al conectar con el servidor:", error);
-      alert("Error al conectar con el servidor");
+      Swal.fire({
+        icon: 'error',
+        title: 'Registration Failed',
+        text: 'Error al conectar con el servidor'
+      });
     }
     
   };
