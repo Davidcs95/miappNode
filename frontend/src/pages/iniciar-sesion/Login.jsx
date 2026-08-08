@@ -12,10 +12,12 @@ const Login = ({ setUsuarioLogueado }) => {
     e.preventDefault();
 
     try {
-      
-      const response = await fetch('http://localhost:3000/api/auth/login', {
+      const response = await fetch('https://counting-choosy-starboard.ngrok-free.dev/api/auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true' // <-- ¡Este encabezado es obligatorio con Ngrok!
+        },
         body: JSON.stringify({ email, password })
       });
 
@@ -33,7 +35,6 @@ const Login = ({ setUsuarioLogueado }) => {
         Swal.fire({
           icon: 'success',
           title: 'Welcome!',
-          // CORRECTO: Backticks permiten insertar variables
           text: `You have successfully logged in, ${nombreUsuario}!.`,
           confirmButtonColor: '#ff9800'
         }).then(() => {
@@ -87,12 +88,11 @@ const Login = ({ setUsuarioLogueado }) => {
           <Link className="register-link" to="/register">Create Account</Link>
         </div>
         <div className="contenedor-navegacion">
-                <Link to="/" className="btn-back-home1">
-               ← Back to home
-               </Link>
+            <Link to="/" className="btn-back-home1">
+            ← Back to home
+            </Link>
          </div>
       </div>
-      
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-// 1. Agregamos "async" antes de (e)
 const Register = ({ setUsuarios, usuarios }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,10 +11,11 @@ const Register = ({ setUsuarios, usuarios }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/auth/register', {
+      const response = await fetch(' https://counting-choosy-starboard.ngrok-free.dev/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true'
         },
         body: JSON.stringify({
           username: nombre,
@@ -51,11 +51,9 @@ const Register = ({ setUsuarios, usuarios }) => {
         text: 'Error al conectar con el servidor'
       });
     }
-    
   };
 
   return (
-    
     <div style={{ padding: '48px', maxWidth: '400px', margin: '0 auto', fontFamily: 'sans-serif' }}>
       <h2>¡Filomena store! - Create Account</h2>
       
@@ -63,34 +61,44 @@ const Register = ({ setUsuarios, usuarios }) => {
         {/* Campo Nombre */}
         <div>
           <label style={{ display: 'block', marginBottom: '5px' }}>Full Name:</label>
-          <input type="text"
+          <input 
+            type="text"
             placeholder="Ej. Juan Pérez" 
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
-            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
+            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} 
+            required
+          />
         </div>
 
         {/* Campo Email */}
         <div>
           <label style={{ display: 'block', marginBottom: '5px' }}>Email Address:</label>
-          <input type="email" 
+          <input 
+            type="email" 
             value={email}
             placeholder="example@gmail.com" 
             onChange={(e) => setEmail(e.target.value)}
-            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
+            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} 
+            required
+          />
         </div>
         
         {/* Campo Password */}
         <div>
           <label style={{ display: 'block', marginBottom: '5px' }}>Password:</label>
-          <input type="password" 
+          <input 
+            type="password" 
             value={password}
             placeholder="Create a password" 
             onChange={(e) => setPassword(e.target.value)}
-            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} />
+            style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid #ccc' }} 
+            required
+          />
         </div>
         
-        <button type="submit" 
+        <button 
+          type="submit" 
           style={{ padding: '10px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
           Register
         </button>
