@@ -11,7 +11,7 @@ const Register = ({ setUsuarios, usuarios }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(' https://counting-choosy-starboard.ngrok-free.dev/api/auth/register', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
