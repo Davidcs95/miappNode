@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
 
 // 1. Configuración de entorno única
 dotenv.config();
@@ -40,6 +41,7 @@ mongoose.connection.once('open', () => {
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/projects', projectRoutes);
+app.use('/imagenes', express.static(path.join(__dirname, '../imagenes')));
 
 const PORT = process.env.PORT || 3000; 
 app.listen(PORT, () => {

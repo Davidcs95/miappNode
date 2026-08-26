@@ -5,7 +5,8 @@ const ProductoCard = ({ data }) => {
   return (
     <div className="tarjeta-producto">
       {/* 1. Imagen */}
-      <img src={data.imagen} alt={data.nombre} className="card-img" />
+      // Debe quedarte algo similar a esto:
+     <img src={`${import.meta.env.VITE_API_URL}/imagenes/${data.imagen}`} alt={data.nombre} />  
       
       {/* 2. Nombre */}
       <h3>{data.nombre}</h3>
