@@ -3,7 +3,6 @@ const Project = require('../models/project.model');
 // 1. CREATE
 const createProject = async (req, res) => {
     try {
-
         const {
             title,
             description,
@@ -28,7 +27,6 @@ const createProject = async (req, res) => {
         res.status(201).json(savedProject);
 
     } catch (error) {
-
         res.status(500).json({
             message: 'Error creating project',
             error: error.message
@@ -37,19 +35,14 @@ const createProject = async (req, res) => {
 };
 
 
-// 2. READ
+// 2. READ (AHORA ES PÚBLICO: Trae todos los productos sin buscar req.user.id)
 const getProjects = async (req, res) => {
-
     try {
-
-        const projects = await Project.find({
-            author: req.user.id
-        }).populate('author', 'username email');
+        const projects = await Project.find().populate('author', 'username email');
 
         res.status(200).json(projects);
 
     } catch (error) {
-
         res.status(500).json({
             message: 'Error fetching projects',
             error: error.message
@@ -60,9 +53,7 @@ const getProjects = async (req, res) => {
 
 // 3. UPDATE
 const getProjectById = async (req, res) => {
-
     try {
-
         const { id } = req.params;
 
         const {
@@ -99,7 +90,6 @@ const getProjectById = async (req, res) => {
         res.status(200).json(updatedProject);
 
     } catch (error) {
-
         res.status(500).json({
             message: 'Error al actualizar el proyecto',
             error: error.message
