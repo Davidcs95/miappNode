@@ -41,7 +41,7 @@ mongoose.connection.once('open', () => {
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/projects', projectRoutes);
-app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
+app.use('/imagenes', express.static('imagenes'));
 
 const PORT = process.env.PORT || 3000; 
 app.listen(PORT, () => {

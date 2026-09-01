@@ -73,17 +73,17 @@ const Cart = () => {
             <div key={item.id} className="cart-item">
 
               {/* Imagen del producto */}
-              <img
-                src={`${import.meta.env.VITE_API_URL}${item.imagen}`}
-                alt={item.nombre}
-                style={{
-                  width: '200px',
-                  height: '200px',
-                  objectFit: 'cover',
-                  marginRight: '20px',
-                  borderRadius: '8px',
-                }}
-              />
+            <img 
+  src={`${import.meta.env.VITE_API_URL}/imagenes/${item.imagen}`} 
+  alt={item.nombre} 
+  style={{
+    width: '200px',
+    height: '200px',
+    objectFit: 'cover',
+    marginRight: '20px',
+    borderRadius: '8px',
+  }}
+/>
 
               {/* Información del producto */}
               <span>
