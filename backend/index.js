@@ -31,6 +31,7 @@ const projectRoutes = require('./routes/project.route');
 const taskRoutes = require('./routes/task.route');
 const connectDB = require('./config/db');
 const productRoutes = require('./routes/product.route');
+const path = require('path');
 
 // 4. Inicialización de Base de Datos
 connectDB();
@@ -43,7 +44,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/projects', projectRoutes);
-app.use('/imagenes', express.static('imagenes'));
+app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
 
 const PORT = process.env.PORT || 3000; 
 app.listen(PORT, '0.0.0.0', () => {
