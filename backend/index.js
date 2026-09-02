@@ -30,6 +30,7 @@ const auth = require('./routes/auth.routes');
 const projectRoutes = require('./routes/project.route');
 const taskRoutes = require('./routes/task.route');
 const connectDB = require('./config/db');
+const productRoutes = require('./routes/product.route');
 
 // 4. Inicialización de Base de Datos
 connectDB();
@@ -38,12 +39,13 @@ mongoose.connection.once('open', () => {
 });
 
 // 5. Rutas
+app.use('/api/products', productRoutes);
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/imagenes', express.static('imagenes'));
 
 const PORT = process.env.PORT || 3000; 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
