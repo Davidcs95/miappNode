@@ -397,42 +397,22 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
         
 
         <li className="dropdowntwo">
-          <img className="cat" src="imagenes/pata.png" alt="CAT" />
-          <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
-          <ul className="submenu2">
-            <li><a href="#">Toys</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Beds</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Other things</a></li>
-          </ul>
-        </li>
+  <img className="cat" src={`${import.meta.env.VITE_API_URL}/imagenes/pata.png`} alt="CAT" />
+  <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
+  <ul className="submenu2">...</ul>
+</li>
 
-        <li className="dropdownthree">
-          <img className="ganado" src="imagenes/ganado 2.png" alt="otros" />
-         <button onClick={scrollToAnimals} className="btn-link-nav">Others Animals</button>
-         
+<li className="dropdownthree">...</li>
 
-          <ul className="submenu3">
-            <li><a href="#">Birds</a></li>
-            <li><a href="#">Fishes</a></li>
-            <li><a href="#">Rodents</a></li>
-            <li><a href="#">Horses</a></li>
-            <li><a href="#">Rabbits</a></li>
-            <li><a href="#">Others</a></li>
-          </ul>
-        </li>
+<li className="contact">
+  <img className="huella" src={`${import.meta.env.VITE_API_URL}/imagenes/huella.png`} alt="" />
+  <button onClick={scrollToFormReg} className="btn-link-nav">Contact Us</button>
+</li>
 
-        <li className="contact">
-          <img className="huella" src="imagenes/huella.png" alt="" />
-          <button onClick={scrollToFormReg} className="btn-link-nav">Contact Us</button>
-          
-        </li>   
-
-        <li className="find-store">
-          <img className="find your store" src="imagenes/store-solid.png" alt="" />
-          <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
-        </li>
+<li className="find-store">
+  <img className="find your store" src={`${import.meta.env.VITE_API_URL}/imagenes/store-solid.png`} alt="" />
+  <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
+</li>
          
 
         {showButton && (
