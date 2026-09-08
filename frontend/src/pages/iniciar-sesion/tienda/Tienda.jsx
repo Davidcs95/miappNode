@@ -369,7 +369,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
 
         {/* Enlace al Login */}
         <li className="login">
-          <img className="img-iniciar-sesion" src="imagenes/iniciar-sesion.png" alt="" />
+          <img className="img-iniciar-sesion" src={`${import.meta.env.VITE_API_URL}/imagenes/iniciar-sesion.png`} alt="" />
           <Link to="/login"> Login</Link>
           
         </li>
@@ -384,7 +384,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
       <div className="nav2">
         
         <li className="dropdown">
-          <img className="#" src="imagenes/perro.png" alt="DOG" /> 
+          <img className="#" src={`${import.meta.env.VITE_API_URL}/imagenes/perro.png`} alt="DOG" />
           <button onClick={scrollToPerros} className="btn-link-nav">Dogs</button>
           <ul className="submenu">
             <li><a href="#">Toys</a></li>
@@ -431,7 +431,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
   rel="noopener noreferrer" 
   className="whatsapp-float"
 >
-  <img src="./imagenes/whatsapp.png" />
+  <img src={`${import.meta.env.VITE_API_URL}/imagenes/whatsapp.png`} />
   </a>
              
     </section>
@@ -619,9 +619,9 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
     <div className="footer-col">
       <h4>Síguenos</h4>
       <div className="social-icons">
-        <a href="#" className="icon"><img src="/imagenes/facebook.png" alt="FB" /></a>
-        <a href="#" className="icon"><img src="/imagenes/instagram.png" alt="IG" /></a>
-        <a href="#" className="icon"><img src="/imagenes/twitter.png" alt="X" /></a>
+       <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/facebook.png`} alt="FB" /></a>
+  <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/instagram.png`} alt="IG" /></a>
+  <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/twitter.png`} alt="X" /></a>
       </div>
     </div>
   </div>
