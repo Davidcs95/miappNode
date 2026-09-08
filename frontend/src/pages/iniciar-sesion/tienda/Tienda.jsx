@@ -332,7 +332,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
           <Link to="/" className="logo">
 
            <h1>
-            <img src="/imagenes/Filomena.png" alt="Logo Filomena"/>
+            <img src={`${import.meta.env.VITE_API_URL}/imagenes/Filomena.png`} alt="Logo Filomena"/>
               ¡Filomena store!
             </h1>
           </Link>
@@ -375,7 +375,7 @@ const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
         </li>
         
         <li className="carrito">
-          <img className="img-carrito" src="imagenes/carrito-de-compras.png" alt="" />
+          <img className="img-carrito" src={`${import.meta.env.VITE_API_URL}/imagenes/carrito-de-compras.png`} alt="" />
           <Link to="/compras"> Purchase</Link>
         </li>
       </div>
