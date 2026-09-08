@@ -99,7 +99,7 @@ const misProductos = [
     {
       id: 1, nombre: "Refillable toys",
       precio: 30.000, 
-      imagen: "/imagenes/Juguetes.jpg",
+      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Juguetes.jpg`,
       descripcion: "Refillable dog toys are interactive accessories designed with a hollow interior that can be filled with wet food, kibble, or treats. They function like an edible puzzle, stimulating the intellect, reducing anxiety, and relieving boredom by encouraging the pet to lick or chew to extract the reward..", 
       cantidad:5
     },
@@ -107,7 +107,7 @@ const misProductos = [
     { id: 1, nombre: "Wet dog food", 
       precio: 8.000,
       categoria: "Dog", 
-      imagen: "/imagenes/PEDIGREE.jpg", 
+      imagen:`${import.meta.env.VITE_API_URL}/imagenes/PEDIGREE.jpg`,
       descripcion: "Wet dog food is a food rich in water (up to 80%), packaged in cans or airtight envelopes. It combines fresh and natural ingredients such as meats and vegetables, offering a soft texture, intense flavor and high hydration. It is ideal for stimulating appetite, promoting digestion and facilitating chewing.",
       cantidad: 80
     },
