@@ -71,7 +71,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Refillable toys",
       precio: 30000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Juguetes.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Juguetes.jpg`,
       descripcion: "Refillable dog toys are interactive accessories designed with a hollow interior that can be filled with wet food, kibble, or treats. They function like an edible puzzle, stimulating the intellect, reducing anxiety, and relieving boredom by encouraging the pet to lick or chew to extract the reward.",
       cantidad: 5
     },
@@ -80,7 +80,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Wet dog food",
       precio: 8000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/PEDIGREE.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/PEDIGREE.jpg`,
       descripcion: "Wet dog food is a food rich in water (up to 80%), packaged in cans or airtight envelopes. It combines fresh and natural ingredients such as meats and vegetables, offering a soft texture, intense flavor and high hydration. It is ideal for stimulating appetite, promoting digestion and facilitating chewing.",
       cantidad: 80
     },
@@ -89,7 +89,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Bed",
       precio: 100000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/cama2.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/cama2.jpg`,
       descripcion: "Dog beds and mats are accessories designed to ensure your dog's comfort, protect their joints, and regulate their temperature. They are classified according to their materials and features, with orthopedic, cooling (gel-infused), and elevated options being particularly noteworthy.",
       cantidad: 6
     },
@@ -98,7 +98,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "paw dazzle",
       precio: 47000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/rascadordog.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/rascadordog.jpg`,
       descripcion: "Specialize in fresh, locally-made dog treats, beautifully iced bakery cookies, collars, toys, and apparel (including bridal wear for pets). A highly-rated, family-owned pet bakery and boutique, or a specialized line of dog-grooming and scratch-board products.",
       cantidad: 7
     },
@@ -107,7 +107,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "feeder",
       precio: 60000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Comederos_bebederos.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Comederos_bebederos.jpg`,
       descripcion: "Food and water bowls are essential accessories designed to ensure your dog is properly fed and hydrated. They help maintain good posture, control the rate of food intake, and ensure access to fresh water. Stainless steel: Made of stainless steel or ceramic to maintain hygiene.",
       cantidad: 40
     },
@@ -125,7 +125,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Bags and dispenser",
       precio: 15000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Bolsas_dispensador.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Bolsas_dispensador.jpg`,
       descripcion: "A dog waste bag dispenser is a portable accessory that attaches to a leash or backpack for conveniently carrying rolls of bags. Designed to collect waste during walks, it allows for quick and clean bag removal.",
       cantidad: 30
     },
@@ -134,7 +134,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "blanket",
       precio: 38000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Manta_Cobija.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Manta_Cobija.jpg`,
       descripcion: "A dog blanket is a cozy, insulating accessory designed to provide warmth, comfort, and security. Perfect for lining beds, sofas, or crates, they typically feature soft, pet-safe materials and are highly machine-washable.",
       cantidad: 10
     },
@@ -143,7 +143,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "kennel",
       precio: 55000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Transportín_guacal.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Transportín_guacal.jpg`,
       descripcion: "A transportín or guacal (kennel) is a portable, enclosed container used to safely and comfortably transport dogs. It provides a secure den-like environment for travel, vet visits, or crate training, and is strictly required by airlines to meet specific safety standards.",
       cantidad: 2
     },
@@ -152,7 +152,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Dog shampoo and conditioner",
       precio: 16000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Champu_acondicionador.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Champu_acondicionador.jpg`,
       descripcion: "Dog shampoo and conditioner are hygiene products formulated to cleanse dirt, control odors, and maintain your pet's skin pH balance. Using both products nourishes the coat, prevents dryness, detangles fur, and makes brushing easier.",
       cantidad: 8
     },
@@ -161,7 +161,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Comb",
       precio: 22000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Cepillo_peine.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Cepillo_peine.jpg`,
       descripcion: "Choosing between a brush or comb depends entirely on your dog’s coat type. Brushes are best for removing loose hair, distributing natural oils, and removing surface dirt, while combs are precision tools designed to penetrate deep, untangle stubborn mats, and check for fleas.",
       cantidad: 50
     },
@@ -170,7 +170,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Dry food",
       precio: 5000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/foodcat.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/foodcat.jpg`,
       descripcion: "Is dehydrated food with only 6% to 11% moisture. It's a popular choice for pets because of its long shelf life and low cost. The crunchy texture helps reduce tartar buildup, although it requires more carbohydrates to produce.",
       cantidad: 50
     },
@@ -179,7 +179,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Feeders and waterers",
       precio: 80000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/comederocat.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/comederocat.jpg`,
       descripcion: "Feeders and waterers are containers or automatic systems designed to provide food and fresh water continuously or periodically to animals. They prevent waste, maintain hygiene, and ensure animal welfare and nutrition.",
       cantidad: 15
     },
@@ -188,7 +188,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Arenero",
       precio: 22000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/arenaa.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/arenaa.jpg`,
       descripcion: "An arenero (bandeja sanitaria) is a specialized indoor container where pets, primarily cats, relieve themselves. The arena (o sustrato) is the absorbent material placed inside, which triggers their instinct to dig and cover their waste.",
       cantidad: 90
     },
@@ -197,7 +197,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "scoop",
       precio: 9000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/pala.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/pala.jpg`,
       descripcion: "A litter scoop is an essential tool for maintaining your cat's litter box. Its design acts like a sieve, allowing you to easily remove solid waste while letting clean litter fall back into the box, optimizing hygiene and reducing litter consumption.",
       cantidad: 140
     },
@@ -206,7 +206,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Cat hammocks",
       precio: 70000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/camacat.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/camacat.jpg`,
       descripcion: "Cat hammocks and cunas (cat beds) are designed to provide felines with secure, comfortable retreats. Hammocks elevate cats to satisfy their love for heights and bird-watching, while cunas offer enclosed, padded spaces for nesting. Both utilize soft materials.",
       cantidad: 30
     },
@@ -215,8 +215,8 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Cat scratcher",
       precio: 90000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/rascadorcat.jpg`,
-      descripcion: "A cat scratcher (rascador) is an essential feline accessory designed to satisfy a cat's natural urge to scratch. It protects your furniture while providing an outlet for stress, stretching, and marking territory. Helps remove old claw sheaths and keeps nails sharp.",
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/rascadorcat.jpg`,
+      descripcion: "A cat scratcher (rascador) is an essential feline accessory designed to satisfy a cat's natural urge to scratch. It protects your furniture while providing an outlet for stress, stretching, and marking territory. Helps remove old claw sheaths and keeps nails sharp."
       cantidad: 80
     },
     {
@@ -224,7 +224,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Clothing",
       precio: 22000,
       categoria: "Cat",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/ropacat.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/ropacat.jpg`,
       descripcion: "Cat clothing is specially designed apparel for felines, ranging from lightweight cotton t-shirts and fleece sweaters to protective recovery suits. While some styles are for fashion, most serve practical purposes like keeping hairless breeds warm, shielding shaved skin, or preventing cats from licking surgical areas.",
       cantidad: 50
     },
@@ -233,7 +233,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Pig food",
       precio: 22000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/pigfood.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/pigfood.jpg`,
       descripcion: "Pig feed is a balanced diet that combines energy sources, protein, and mineral supplements. The formulas are tailored to the animal's life stage to ensure rapid development and high-quality meat.",
       cantidad: 50
     },
@@ -242,7 +242,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Chicken feeders",
       precio: 29000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/comederogallina.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/comederogallina.jpg`,
       descripcion: "Chicken feeders are containers designed to provide food continuously and in an orderly manner. Their main purpose is to optimize feed consumption, prevent birds from wasting or contaminating it, and ensure that all chickens have enough space to feed.",
       cantidad: 500
     },
@@ -251,7 +251,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Horse Health Red Cell",
       precio: 77000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/suplementohorse.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/suplementohorse.jpg`,
       descripcion: "Horse Health Red Cell is a premium, iron-rich vitamin and mineral supplement designed to support normal blood cell health, cardiovascular function, and energy levels in horses.",
       cantidad: 71
     },
@@ -260,7 +260,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "licopan Energy",
       precio: 88000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/caballosumplemento2.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/caballosumplemento2.jpg`,
       descripcion: "licopan Energy is a premium veterinary supplement designed to provide rapid energy and nutritional support for equines and pigs, helping accelerate physical recovery, promote weight gain, and improve athletic performance.",
       cantidad: 96
     },
@@ -269,7 +269,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Solla Ponedoras",
       precio: 37000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/gallinafood.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/gallinafood.jpg`,
       descripcion: "Solla Ponedoras is a line of specialized commercial poultry feed designed to maximize egg production, ensure excellent conversion rates, and produce high-quality eggs with strong shells.",
       cantidad: 30
     },
@@ -278,7 +278,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "The Agrofácil Nipple Drinker",
       precio: 44000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/bebederochicken.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/bebederochicken.jpg`,
       descripcion: "The Agrofácil Nipple Drinker with Coupling is a teat-type water supply system designed for efficient and clean drinking in poultry. It allows animals to drink by pecking at the valve, ensuring fresh water without spills.",
       cantidad: 400
     },
@@ -287,8 +287,8 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Pig feeders",
       precio: 100000,
       categoria: "Animal",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/pigfood2.jpg`,
-      descripcion: "Pig feeders are essential structures designed to provide feed continuously or in rations. They optimize feed intake, minimize waste, and prevent feed contamination.",
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/pigfood2.jpg`,
+      descripcion: "Pig feeders are essential structures designed to provide feed continuously or in rations. They optimize feed intake, minimize waste, and prevent feed contamination."
       cantidad: 250
     },
   ];

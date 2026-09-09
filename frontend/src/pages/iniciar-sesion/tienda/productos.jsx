@@ -52,7 +52,6 @@ const ProductCarousel = ({ productos }) => {
           <SwiperSlide key={producto.id}>
             <div className="card">
               <img
-  <img
   src={producto.imagen}
   alt={producto.nombre}
 />
