@@ -116,7 +116,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       nombre: "Collar or Harness",
       precio: 58000,
       categoria: "Dog",
-      imagen: `${import.meta.env.VITE_API_URL}/imagenes/Collar_Arnes.jpg`,
+      imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/Collar_Arnes.jpg`,
       descripcion: "A dog collar is an essential safety and control accessory fastened around a dog's neck. It primarily serves as a sturdy anchor for attaching a leash during walks, a platform to display identification tags, and a secure base for specialized devices like GPS trackers or parasite treatments.",
       cantidad: 24
     },
@@ -306,7 +306,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           <div className="titulo">
             <Link to="/" className="logo">
               <h1>
-                <img src={`${import.meta.env.VITE_API_URL}/imagenes/Filomena.png`} alt="Logo Filomena" />
+                <img src={`${import.meta.env.VITE_API_URL}/api/imagenes/Filomena.png`} alt="Logo Filomena" />
                 ¡Filomena store!
               </h1>
             </Link>
@@ -330,19 +330,19 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           <button className="button3" type="submit">¡go!</button>
 
           <li className="login">
-            <img className="img-iniciar-sesion" src={`${import.meta.env.VITE_API_URL}/imagenes/iniciar-sesion.png`} alt="" />
+            <img className="img-iniciar-sesion" src={`${import.meta.env.VITE_API_URL}/api/imagenes/iniciar-sesion.png`} alt="" />
             <Link to="/login"> Login</Link>
           </li>
 
           <li className="carrito">
-            <img className="img-carrito" src={`${import.meta.env.VITE_API_URL}/imagenes/carrito-de-compras.png`} alt="" />
+            <img className="img-carrito" src={`${import.meta.env.VITE_API_URL}/api/imagenes/carrito-de-compras.png`} alt="" />
             <Link to="/compras"> Purchase</Link>
           </li>
         </div>
 
         <div className="nav2">
           <li className="dropdown">
-            <img src={`${import.meta.env.VITE_API_URL}/imagenes/perro.png`} alt="DOG" />
+            <img src={`${import.meta.env.VITE_API_URL}/api/imagenes/perro.png`} alt="DOG" />
             <button onClick={scrollToPerros} className="btn-link-nav">Dogs</button>
             <ul className="submenu">
               <li><a href="#dogs">Toys</a></li>
@@ -353,7 +353,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           </li>
 
           <li className="dropdowntwo">
-            <img className="cat" src={`${import.meta.env.VITE_API_URL}/imagenes/pata.png`} alt="CAT" />
+            <img className="cat" src={`${import.meta.env.VITE_API_URL}/api/imagenes/pata.png`} alt="CAT" />
             <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
           </li>
 
@@ -362,12 +362,12 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           </li>
 
           <li className="contact">
-            <img className="huella" src={`${import.meta.env.VITE_API_URL}/imagenes/huella.png`} alt="" />
+            <img className="huella" src={`${import.meta.env.VITE_API_URL}/api/imagenes/huella.png`} alt="" />
             <button onClick={scrollToFormReg} className="btn-link-nav">Contact Us</button>
           </li>
 
           <li className="find-store">
-            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/imagenes/store-solid.png`} alt="" />
+            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/api/imagenes/store-solid.png`} alt="" />
             <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
           </li>
 
@@ -384,7 +384,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           rel="noopener noreferrer"
           className="whatsapp-float"
         >
-          <img src={`${import.meta.env.VITE_API_URL}/imagenes/whatsapp.png`} alt="WhatsApp" />
+          <img src={`${import.meta.env.VITE_API_URL}/api/imagenes/whatsapp.png`} alt="WhatsApp" />
         </a>
       </section>
 
@@ -485,9 +485,9 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           <div className="footer-col">
             <h4>Síguenos</h4>
             <div className="social-icons">
-              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/facebook.png`} alt="FB" /></a>
-              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/instagram.png`} alt="IG" /></a>
-              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/imagenes/twitter.png`} alt="X" /></a>
+              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/api/imagenes/facebook.png`} alt="FB" /></a>
+              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/api/imagenes/instagram.png`} alt="IG" /></a>
+              <a href="#" className="icon"><img src={`${import.meta.env.VITE_API_URL}/api/imagenes/twitter.png`} alt="X" /></a>
             </div>
           </div>
         </div>
