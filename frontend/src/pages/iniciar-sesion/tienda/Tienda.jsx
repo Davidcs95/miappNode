@@ -392,7 +392,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           </li>
 
           <li className="find-store">
-            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/api/imagenes/Hueso.png`} alt="" />
+            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/api/imagenes/fish.png`} alt="" />
             <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
           </li>
 
