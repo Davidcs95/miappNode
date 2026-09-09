@@ -44,7 +44,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/auth', auth);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/projects', projectRoutes);
-app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
+app.use('/api/imagenes', express.static(path.join(__dirname, 'imagenes')));
 
 const PORT = process.env.PORT || 3000; 
 app.listen(PORT, '0.0.0.0', () => {

@@ -405,7 +405,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
       <section>
         <section className="parallax-section">
-          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/labradorright.jpg')" }}></div>
+          <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/labradorright.jpg')` }}></div>
           <h2 className="section-title">DOGS</h2>
         </section>
 
@@ -422,7 +422,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
       <section>
         <section className="parallax-section">
-          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/backgato.jpg')" }}></div>
+          <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/backgato.jpg')` }}></div>
           <h2 className="section-title">CATS</h2>
         </section>
 
@@ -440,7 +440,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
       <section>
         <section className="parallax-section">
-          <div className="parallax-bg" style={{ backgroundImage: "url('/imagenes/aniamlesfull.jpg')" }}></div>
+         <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/aniamlesfull.jpg')` }}></div>
           <h2 className="section-title">Animals</h2>
         </section>
 

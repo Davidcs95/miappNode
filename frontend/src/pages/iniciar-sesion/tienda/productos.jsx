@@ -52,7 +52,8 @@ const ProductCarousel = ({ productos }) => {
           <SwiperSlide key={producto.id}>
             <div className="card">
               <img
-  src={`${import.meta.env.VITE_API_URL}/imagenes/${producto.imagen}`}
+  <img
+  src={producto.imagen}
   alt={producto.nombre}
 />
               
