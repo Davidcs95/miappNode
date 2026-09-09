@@ -1,0 +1,229 @@
+$(document).ready(function () {
+  let timestampUnix = Math.floor(Date.now() / 1000);
+  // let urlInscri = 'iniciar-sesion?nocache='+timestampUnix;
+  //prod
+  let urlInscri = 'https://transacciones.colsubsidio.com/comunidades/comunidades/inicio';
+  // dev
+  // let urlInscri = 'https://transacciones.colsubsidio.com/comunidadesciamqa/comunidades/inicio';
+  $('.modalInscription .btnInscription').prop('href', urlInscri);
+
+
+  funcUserLoggeo();
+
+  $(document).on("click","#userActionLogout, #userActionLogoutMobile",function(e) {
+    localStorage.clear();
+    window.location.href="/";
+    
+
+  });
+
+  $('.sliderMain').slick({
+    arrows: true,
+    dots: true,
+    fade: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 729,
+        settings: {
+          arrows: false
+        }
+      },
+    ]
+  });
+
+  $('.wrapperThreeOwlCarousel').owlCarousel({
+    loop: false,
+    margin: 0,
+    nav: false,
+    dots: true,
+    items: 1
+  });
+
+  $('.wrapperFiveOwlCarousel').owlCarousel({
+    loop: false,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      992: {
+        items: 2,
+        nav: false,
+        dots: true,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        dots: true,
+      }
+    }
+  });
+
+  $('.wrapperSevenOwlCarousel').owlCarousel({
+    loop: false,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      1000: {
+        items: 4,
+        nav: true,
+        dots: true,
+      }
+    }
+  });
+
+  $('.wrapperNineOwlCarousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    infinite: false,
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        dots: true,
+      }
+    }
+  });
+
+  $('.wrapperTenOwlCarousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        dots: true,
+      }
+    }
+  });
+
+
+  if( $('body.path-catalogo-productos').length > 0){
+    $(document).on("click",".slick-track > .itemSlider:first-child .linkItemSlider",function(e) {
+      e.preventDefault();
+
+      // Datos del usuario
+      let names = encodeURIComponent(localStorage.getItem('nameFisrtUser'))+' '+encodeURIComponent(localStorage.getItem('lastNameFisrtUser'));
+      let documentUser = encodeURIComponent(localStorage.getItem('documentUser'));
+      let phoneUser = encodeURIComponent(localStorage.getItem('phoneUser'));
+      let mailUser = encodeURIComponent(localStorage.getItem('mailUser'));
+      let addressUser = "";
+      let aptoUser = "";
+      let nommuniUser = "";
+
+      if( names != "" && documentUser != "" && phoneUser != "" && mailUser != ""){
+        let urlServieTaggerpet = "/integracion_taggerpet/api_taggerpet_resource?correo="+mailUser+"&nombres="+names+"&documento="+documentUser+"&direccion="+addressUser+"&celular="+phoneUser+"&apartamento="+aptoUser+"&nommuni="+nommuniUser;
+    
+        $.getJSON(urlServieTaggerpet, function (response) {
+          if(response.status){
+            window.open(response.url, '_blank');
+          }else{
+            alert(response.message);
+          }
+          
+        });
+      }else{
+        alert('Los siguientes datos son obligatorios: Nombre, correo, celular, número de documento y dirección');
+      }
+
+      
+
+    });
+  }
+
+
+});
+
+function funcUserLoggeo() {
+  let authentication = localStorage.getItem('authentication');
+  let UserName = localStorage.getItem('nameFisrtUser') + ' ' + localStorage.getItem('lastNameFisrtUser');
+  if (authentication == 1) {
+    //$('.wrapperMenu > li:last-child > a').text('Bienvenid@, ' + UserName);
+    $('.wrapperBtnMenu').empty();
+    $('.wrapperBtnMenu').removeAttr('data-bs-target');
+    $('.wrapperBtnMenu').removeAttr('data-bs-toggle');
+    $('.wrapperBtnMenu').text('Bienvenid@, ' + UserName);
+    $('#userActionLogout, #userActionLogoutMobile').show();
+  }
+}
+
+
+function filterProducts() {
+  let boolNameFilter = false;
+  let boolCategoryFilter = false;
+
+  let input = document.getElementById('filterNameProducts');
+  let filter = input.value.toUpperCase();
+
+  let filterCat = document.getElementById('filterCateogryProducts');
+  let filterCatValue = filterCat.value;
+
+  if (filter != "") {
+    boolNameFilter = true;
+  }
+
+  if (filterCatValue != "") {
+    boolCategoryFilter = true;
+  }
+
+  $(".wrapperFilterResult .wrapperDisplayItemFi").each(function () {
+    $(this).css('display', 'none');
+
+    if (boolNameFilter) {
+      let title = $(this).find("h3").text().toUpperCase();
+      if (title.indexOf(filter) > -1) {
+        $(this).css('display', 'block');
+      }
+    }
+
+    if (boolCategoryFilter) {
+      let categoryfilter = $(this).attr('data-categoryfilter');
+      if (categoryfilter == filterCatValue || filterCatValue == "all") {
+        $(this).css('display', 'block');
+      }
+    }
+  });
+}

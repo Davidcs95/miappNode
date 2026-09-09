@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://www.colsubsidio.com/mascotas/ -->
+<html lang="es" dir="ltr" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://drupalbuckettest.s3.us-east-2.amazonaws.com/favicon-colsubsidio_0.png" type="image/png">
+
+    <title>Página de inicio | Mascotas Colsubsidio</title>
+    <link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/align.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/fieldgroup.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/container-inline.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/clearfix.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/details.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/hidden.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/item-list.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/js.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/nowrap.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/position-container.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/reset-appearance.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/resize.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/system-status-counter.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/system-status-report-counters.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/system-status-report-general-info.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/tablesort.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/views.module.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/paragraphs.unpublished.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/normalize.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/style.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/action-links.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/breadcrumb.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/container-inline.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/details.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/exposed-filters.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/field.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/form.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/icons.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/inline-form.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/item-list.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/links.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/menu.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/more-link.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/pager.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/tabledrag.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/tableselect.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/tablesort.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/textarea.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/ui-dialog.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/messages.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/slick.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/slick-theme.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/owl.carousel.min.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/owl.theme.default.min.css">
+<link rel="stylesheet" media="all" href="./Página de inicio _ Mascotas Colsubsidio_files/style(1).css">
+
+    
+
+    <!-- Google Tag Manager -->
+    <script async="" src="./Página de inicio _ Mascotas Colsubsidio_files/clarity.js.descarga"></script><script type="text/javascript" id="www-widgetapi-script" src="./Página de inicio _ Mascotas Colsubsidio_files/www-widgetapi.js.descarga" async=""></script><script type="text/javascript" async="" src="./Página de inicio _ Mascotas Colsubsidio_files/iframe_api"></script><script async="" src="./Página de inicio _ Mascotas Colsubsidio_files/t8802p4vjl"></script><script type="text/javascript" async="" src="./Página de inicio _ Mascotas Colsubsidio_files/js"></script><script async="" src="./Página de inicio _ Mascotas Colsubsidio_files/gtm.js.descarga"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5HZQBX6');</script>
+    <!-- End Google Tag Manager -->
+
+  </head>
+  <body class="path-frontpage page-node-type-pagina-de-inicio    bg-" cz-shortcut-listen="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5HZQBX6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+        <div class="visually-hidden-focusable skip-link p-3 container">
+      <a href="https://www.colsubsidio.com/mascotas/#main-content" class="p-2">
+        Pasar al contenido principal
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas d-flex flex-column h-100" data-off-canvas-main-canvas="">
+    <header>
+  <div class="visibleDesktop">
+  	<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-12 col-md-4">
+					<a href="http://www.colsubsidio.com/mascotas/">
+						<img src="./Página de inicio _ Mascotas Colsubsidio_files/logo-mascotas-colsubsidio.svg">
+					</a>
+				</div>
+				<div class="col-12 col-md-8 text-end">
+	        					<ul class="wrapperMenu">
+						<li>
+							<a href="http://www.colsubsidio.com/mascotas/">Inicio</a>
+						</li>
+						<li>
+							<a href="http://www.colsubsidio.com/mascotas//blog">Blog</a>
+						</li>
+						<li>
+							<a href="http://www.colsubsidio.com/mascotas//eventos">Eventos</a>
+						</li>
+						<li>
+							<a href="http://www.colsubsidio.com/mascotas//catalogo-productos">Productos</a>
+						</li>
+						<!--<li>
+							<a href="#">Aliados</a>
+						</li>-->
+						<li style="position:relative;">
+							<div class="wrapperBtnMenu flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+								<a href="javascript:void(0);">Ingreso</a> / <a href="javascript:void(0);">Registro</a>
+							</div>
+														<a style="display: none;font-size: 0.7rem;color: #333 !important;position: absolute;bottom: -20px;right: 4px;" id="userActionLogout" href="javascript:void(0);">Cerrar sesión</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+  </div>
+  <div class="visibleMobile">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-6 headerItemLeft">
+					<a href="http://www.colsubsidio.com/mascotas/">
+						<img src="./Página de inicio _ Mascotas Colsubsidio_files/logo-mascotas-mobile.svg" width="120" height="42">
+					</a>
+				</div>
+				<div class="col-6 headerItemRight">
+					<a href="https://www.colsubsidio.com/mascotas/#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+						<img src="./Página de inicio _ Mascotas Colsubsidio_files/ico-bars-menu-mobile.svg" width="36" height="36">
+					</a>
+				</div>
+			</div>
+		</div>
+  </div>	
+	
+</header>
+
+
+  <section class="wrapperSliderMain">
+	<div class="sliderMain slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: inline-block;">Previous</button>
+      <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 10585px;"><div class="itemSlider slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 2117px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_BANNER_HOME_web_registro.png" alt="Inscripción" class="visibleDesktop">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_BANNER_HOME_mob_registro.png" alt="Inscripción" class="visibleMobile" style="padding-top: 5rem;">
+  <div class="wrapperCaptionSlider">
+    <div class="row">
+      <div class="col">
+        <div class="separador-5 visibleMobile"></div>
+        <h2 class="titleText font-weight-700">¡La Aventura con tu Mascota Comienza Aquí! 🌟🐕
+</h2>
+        <div class="separador-10 visibleDesktop"></div>
+        <div class="separador-5 visibleMobile"></div>
+        <p>Explora nuestra Comunidad de Mascotas Colsubsidio y accede a una red de apoyo y recursos diseñados especialmente para ti y tus mascotas
+
+!Juntos lo hacemos posible!</p>
+        <div class="separador-10"></div>
+        <a target="_blank" href="https://transacciones.colsubsidio.com/comunidades/comunidades/inicio" class="linkItemSlider" tabindex="0">¡Inscríbete aquí!</a>
+      </div>
+    </div>
+  </div>
+</div><div class="itemSlider slick-slide" data-slick-index="1" aria-hidden="true" style="width: 2117px; position: relative; left: -2117px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_X_ESCUELA.png" alt="web" class="visibleDesktop">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/si_MOB_2 copia.png" alt="mob" class="visibleMobile" style="padding-top: 5rem;">
+  <div class="wrapperCaptionSlider">
+    <div class="row">
+      <div class="col">
+        <div class="separador-5 visibleMobile"></div>
+        <h2 class="titleText font-weight-700">Pasarela atletas de verano</h2>
+        <div class="separador-10 visibleDesktop"></div>
+        <div class="separador-5 visibleMobile"></div>
+        <p>Desfila junto a tu peludo y demuestra que son el  equipo más alegre del verano.  ( 20 de junio Club bellavista)</p>
+        <div class="separador-10"></div>
+        <a target="_blank" href="https://www.colsubsidio.com/mascotas/" class="linkItemSlider" tabindex="-1">Participa ya</a>
+      </div>
+    </div>
+  </div>
+</div><div class="itemSlider slick-slide" data-slick-index="2" aria-hidden="true" style="width: 2117px; position: relative; left: -4234px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_X_ESCUELA_WEB_2.jpg" alt="escuela banner" class="visibleDesktop">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_X_ESCUELA_MOB_2.jpg" alt="Escuela banner" class="visibleMobile" style="padding-top: 5rem;">
+  <div class="wrapperCaptionSlider">
+    <div class="row">
+      <div class="col">
+        <div class="separador-5 visibleMobile"></div>
+        <h2 class="titleText font-weight-700">La nueva escuela de emociones caninas</h2>
+        <div class="separador-10 visibleDesktop"></div>
+        <div class="separador-5 visibleMobile"></div>
+        <p>Así como tú tienes días buenos, días tensos o momentos de mucha emoción…
+¡a tu perro le pasa lo mismo! 🐕‍🦺✨</p>
+        <div class="separador-10"></div>
+        <a target="_blank" href="https://www.diversioncolsubsidio.com/deportes-escuela-de-emociones-caninas#/wizard?clasificacion=187&amp;producto=190" class="linkItemSlider" tabindex="-1">Conoce más</a>
+      </div>
+    </div>
+  </div>
+</div><div class="itemSlider slick-slide" data-slick-index="3" aria-hidden="true" style="width: 2117px; position: relative; left: -6351px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_BANNER_HOME_web_clase.png" alt="Clase" class="visibleDesktop">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_BANNER_HOME_mob_clase.png" alt="Clase" class="visibleMobile" style="padding-top: 5rem;">
+  <div class="wrapperCaptionSlider">
+    <div class="row">
+      <div class="col">
+        <div class="separador-5 visibleMobile"></div>
+        <h2 class="titleText font-weight-700">¡Aprende y conecta con tu mascota!</h2>
+        <div class="separador-10 visibleDesktop"></div>
+        <div class="separador-5 visibleMobile"></div>
+        <p>Por ser parte de nuestra comunidad, tienes acceso a una clase especial diseñada para fortalecer el vínculo con tu mascota mientras aprenden juntos.</p>
+        <div class="separador-10"></div>
+        <a target="_blank" href="https://www.diversioncolsubsidio.com/deportes-escuela-de-emociones-caninas#/wizard?clasificacion=187&amp;producto=190" class="linkItemSlider" tabindex="-1">Conoce más 🐾</a>
+      </div>
+    </div>
+  </div>
+</div><div class="itemSlider slick-slide" data-slick-index="4" aria-hidden="true" style="width: 2117px; position: relative; left: -8468px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_X_AVF_web_registro copia_0.jpg" alt="AVF web" class="visibleDesktop">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/MS_X_AVF_mob_registro copia.jpg" alt="avf mob" class="visibleMobile" style="padding-top: 5rem;">
+  <div class="wrapperCaptionSlider">
+    <div class="row">
+      <div class="col">
+        <div class="separador-5 visibleMobile"></div>
+        <h2 class="titleText font-weight-700">🐶 La emoción del Agility llegó a Aventufest
+</h2>
+        <div class="separador-10 visibleDesktop"></div>
+        <div class="separador-5 visibleMobile"></div>
+        <p>Saltos, circuitos y mucha energía marcaron uno de los espacios más divertidos del evento. 🏃‍♂️🐕</p>
+        <div class="separador-10"></div>
+        <a target="_blank" href="https://www.colsubsidio.com/mascotas/node/57" class="linkItemSlider" tabindex="-1">Ver la noticia completa</a>
+      </div>
+    </div>
+  </div>
+</div></div></div>
+	<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 5" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 5" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 5" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 5" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 5" tabindex="-1">5</button></li></ul></div>
+</section>
+<div class="separador-5"></div>
+<section class="wrapperOne pd-auto-12">
+	<div class="container">
+    <div class="row align-items-center justify-content-between">
+  <div class="col-12 col-md-6">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/MINI_BANNER_PORTADA-12.png" alt="PERROS_CLASE_BENEFICIO" class="img-fluid mx-width-100">
+  </div>
+  <div class="col-12 col-md-6">
+    <h2 class="font-weight-500">🐾 Tu mascota también tiene beneficios 💛
+</h2>
+    <div class="separador-10"></div>
+    
+            <div class="clearfix text-formatted field field--name-field-descripcion-dmb field--type-text-long field--label-hidden field__item"><p>Accede a tu clase de emociones caninas y transforma la forma en la que se entienden.</p></div>
+      
+      <div class="separador-10"></div>
+      </div>
+</div>
+	</div>
+</section>
+<div class="separador-10"></div>
+<section class="wrapperTwo pd-auto-10">
+	<div class="container">
+    <div class="row align-items-center justify-content-between">
+  <div class="col-12 order-2 col-md-8 order-md-1">
+    <div class="row">
+      <div class="col-12">
+        <h2>¿Cómo puedes hacer parte de nuestra comunidad?</h2>
+      </div>
+    </div>
+    <div class="separador-10 visibleMobile"></div>
+    <div class="separador-25 visibleDesktop"></div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="wrapperTwoItem">
+          <h3>Paso 1</h3>
+          <div class="separador-5"></div>
+          <p>Da clic en el botón 'Ingreso/Registro’</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="wrapperTwoItem">
+          <h3>Paso 2</h3>
+          <div class="separador-5"></div>
+          <p>Ingresa los datos solicitados, tanto tuyos como de tu mascota.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="wrapperTwoItem">
+          <h3>Paso 3</h3>
+          <div class="separador-5"></div>
+          <p>Disfruta y sé el primero en enterarte de los eventos y actividades que programamos. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 order-1 col-md-4 order-md-2">
+    <div class="separador-5"></div>
+    <img src="./Página de inicio _ Mascotas Colsubsidio_files/etiquetas-11.png" class="img-fluid mx-width-100">
+  </div>
+</div>
+	</div>
+</section>
+
+
+<div class="separador-10"></div>
+<section class="wrapperThree pd-auto-10">
+	<div class="container">
+		<div class="separador-70"></div>
+		<div class="separador-10"></div>
+  	<div class="row">
+  		<div class="col-12">
+  			<h2>Disfruta junto a tu mascota</h2>
+  		</div>
+  	</div>
+  	<div class="separador-15"></div>
+		<div class="row">
+			<div class="col-12">
+				<div class="owl-carousel wrapperThreeOwlCarousel owl-theme owl-loaded owl-drag">
+          
+
+				<div class="owl-stage-outer"><div class="owl-stage"></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+			</div>
+		</div>
+		<div class="separador-70 visibleDesktop"></div>
+		<div class="separador-30"></div>
+	</div>
+</section>
+
+<div class="separador-20 visibleDesktop"></div>
+
+<section class="wrapperFour pd-auto-10">
+	<div class="container">
+		<div class="row align-items-center">
+			  <div class="col-12 col-md-4">
+  <a href="https://www.colsubsidio.com/mascotas//eventos" target="_blank" class="wrapperItemFour">
+    <div class="row align-items-center">
+      <div class="col-4">
+        <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group-8207.png" class="img-fluid" width="130" height="140">
+      </div>
+      <div class="col-8 text-start">
+        <h3>Disfruta de nuestros eventos</h3>
+        <div class="separador-10"></div>
+        <span class="linkFour">Ver eventos</span>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col-12 col-md-4">
+  <a href="https://www.colsubsidio.com/mascotas//blog" target="_blank" class="wrapperItemFour">
+    <div class="row align-items-center">
+      <div class="col-4">
+        <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group-8204.png" class="img-fluid" width="130" height="140">
+      </div>
+      <div class="col-8 text-start">
+        <h3>Consejos para consentir a tu mascota</h3>
+        <div class="separador-10"></div>
+        <span class="linkFour">Ver Blog</span>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col-12 col-md-4">
+  <a href="https://www.colsubsidio.com/mascotas//catalogo-productos" target="_blank" class="wrapperItemFour">
+    <div class="row align-items-center">
+      <div class="col-4">
+        <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group-8206_0.png" class="img-fluid" width="130" height="140">
+      </div>
+      <div class="col-8 text-start">
+        <h3>Los mejores productos para cuidar a tu mejor amigo.</h3>
+        <div class="separador-10"></div>
+        <span class="linkFour">Conoce más</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+		</div>
+	</div>
+</section>
+
+<div class="separador-20 visibleDesktop "></div>
+
+<section class="wrapperFive pd-auto-10">
+	<div class="container">
+  	<div class="row">
+  		<div class="col-12">
+  			<h2>Tips y actualidad</h2>
+  			<div class="separador-20"></div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-12">
+  			<div class="owl-carousel wrapperFiveOwlCarousel wrapperCustomDots wrapperCustomNav owl-theme owl-loaded owl-drag">
+			                                                              
+
+			  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 12819px;"><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/59" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/husky.png" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>Las mascotas más activas para acompañarte en rutas y caminatas</h3>
+      <div class="separador-5"></div>
+      <p>Conoce algunas razas y características ideales para familias y personas amantes de la aventura.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/58" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/perro paseo.png" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>El mejor momento para salir de paseo con tu mascota</h3>
+      <div class="separador-5"></div>
+      <p>Recomendaciones y beneficios de compartir caminatas y actividades al aire libre con mascotas durante esta temporada.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/57" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Recurso 10.png" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>🐾🎉 ¡Las mascotas también fueron protagonistas en Aventufest 2026! 💛</h3>
+      <div class="separador-5"></div>
+      <p>Nuestras mascotas también vivieron una jornada llena de diversión junto a sus familias</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/55" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/pexels-sam-lion-5732431.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>🎁 Manualidades y regalos para consentir a tu mascota esta Navidad</h3>
+      <div class="separador-5"></div>
+      <p>Nuestras mascotas son parte de la familia, y Navidad es el momento perfecto para demostrarles cuánto las queremos 💛.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/54" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/MsNavNotiImg0.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>🎄 Tips para que tus mascotas también disfruten la Navidad</h3>
+      <div class="separador-5"></div>
+      <p>Diciembre es una época de celebración, luces y encuentros familiares, pero para muchas mascotas puede convertirse en un momento de estrés...</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/53" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/perro-gracioso-beagle-feliz-caminando-jugando-en-el-parque.png" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>¡Creando perros valientes con Jei, el profe de los perros!</h3>
+      <div class="separador-5"></div>
+      <p>Aprende cómo fortalecer la confianza y emociones de tu mascota 🐾</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/52" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/_DSC6569-min_0.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>🐶 Festival Guau 2025: una jornada para celebrar el amor por nuestras mascotas</h3>
+      <div class="separador-5"></div>
+      <p>El pasado 21 de septiembre, el Club Bellavista de Colsubsidio se llenó de movimiento, alegría y ladridos con la realización del Festival Guau 2025,</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/51" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/pexels-gunas4life-12596534_0.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>🐾 Encuentro de Razas: ¡Un homenaje a nuestros criollos!</h3>
+      <div class="separador-5"></div>
+      <p>Cada mes vivimos una nueva&nbsp;experiencia en nuestros&nbsp;Encuentros de Razas</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/50" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/1200x404_3_1.png" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Cómo reducir el estrés de tu gato en las visitas al veterinario</h3>
+      <div class="separador-5"></div>
+      <p>La ida al veterinario puede ser un tema muy molesto y estresante para los gatos. Brindar ideas y recomendaciones de cómo hacer para que esta visita sea más amena.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/45" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/hombreEntrenandoPerro (1).jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>Doga: una experiencia de conexión y bienestar en “Colombia de Ensueño – Tributo al Pacífico”</h3>
+      <div class="separador-5"></div>
+      <p>En el evento “Colombia de Ensueño – Tributo al Pacífico” celebramos la independencia con una jornada única de Doga y caminata ecológica, donde cuidadores y mascotas compartieron momentos de relajación, naturaleza y vínculo afectivo</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/44" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/pexels-ekaterina-bolovtsova-4680243.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>En casa y felices: ideas para enriquecer el día de tu mascota sin salir al parque</h3>
+      <div class="separador-5"></div>
+      <p>En casa y felices: ideas para enriquecer el día de tu mascota sin salir al parque</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/43" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Imagen1_0.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Cómo Cuidar de una mascota con necesidades especiales</h3>
+      <div class="separador-5"></div>
+      <p>Cómo cuidar de una mascota con necesidades especiales, ideas para brindarles un espacio cómodo y lleno de bienestar.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/42" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Imagen1.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>¡Bienvenidos a casa! Consejos para una convivencia armoniosa entre mascotas y familia 🐾👨‍👩‍👧‍👦</h3>
+      <div class="separador-5"></div>
+      <p>Consejos para integrar una mascota en hogares con niños o con otras mascotas y cómo fomentar una convivencia armoniosa.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/41" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/banner-vejez-de-tus-peludos-2.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Vínculos Inquebrantables: Cuidando a tus amigos peludos en la vejez</h3>
+      <div class="separador-5"></div>
+      <p>Vínculos Inquebrantables: Cuidando a tus amigos peludos en la vejez</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/40" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/banner-juguetes-2.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Descubre los últimos gadgets y productos para consentir a tus mascotas 🐾📱🎁</h3>
+      <div class="separador-5"></div>
+      <p>Descubre los últimos gadgets y productos para consentir a tus mascotas 🐾📱🎁</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/39" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/2.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Cómo manejar la ansiedad por separación en perros</h3>
+      <div class="separador-5"></div>
+      <p>Cómo manejar la ansiedad por separación en perros</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/38" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/255-158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>¡Historias de mascotas famosas que han dejado huella! 🐾🌟</h3>
+      <div class="separador-5"></div>
+      <p>¡Historias de mascotas famosas que han dejado huella! 🐾🌟</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/37" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-8_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>¡Prepara las maletas para viajar con tu mascota! 🐾🚗✈️</h3>
+      <div class="separador-5"></div>
+      <p>¡Prepara las maletas para viajar con tu mascota! 🐾🚗✈️</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/36" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-7_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>¡Descubre el poder transformador de la adopción y rescate de animales! 🐾❤️</h3>
+      <div class="separador-5"></div>
+      <p>¡Descubre el poder transformador de la adopción y rescate de animales! 🐾❤️</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/35" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-5_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>¡Descubre el arte del entrenamiento básico para tus mascotas! 🐾🎓</h3>
+      <div class="separador-5"></div>
+      <p>¡Descubre el arte del entrenamiento básico para tus mascotas! 🐾🎓</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/33" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Noticias-Mascotas-3_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>Más que mascotas son amigos que curan el alma.</h3>
+      <div class="separador-5"></div>
+      <p>Más que mascotas son amigos que curan el alma.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/32" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Noticias-Mascotas-2_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>Celebra a lo grande el cumpleaños de tu mejor amigo peludo</h3>
+      <div class="separador-5"></div>
+      <p>Celebra a lo grande el cumpleaños de tu mejor amigo peludo</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/31" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Noticias-Mascotas-1_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>Descubre los últimos gadgets y productos para consentir a tus mascotas 🐾📱🎁</h3>
+      <div class="separador-5"></div>
+      <p>Descubre los últimos gadgets y productos para consentir a tus mascotas 🐾📱🎁</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/30" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-4_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>¡Celebra el Día del Veterinario! 🎉: ¡Cuida y protege a tu mascota! 🐾</h3>
+      <div class="separador-5"></div>
+      <p>¡Celebra el Día del Veterinario! 🎉: ¡Cuida y protege a tu mascota! 🐾</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/node/29" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-3_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>10 curiosidades que probablemente no sabías acerca de los perros y gatos</h3>
+      <div class="separador-5"></div>
+      <p>10 curiosidades que probablemente no sabías acerca de los perros y gatos</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/blog/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-four" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-2_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Recetas de postres saludables para tus peluditos</h3>
+      <div class="separador-5"></div>
+      <p>Recetas de postres saludables para tus peluditos</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/blog/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-three" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-6_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Entretenimiento</span>
+      <div class="separador-5"></div>
+      <h3>¡Descubre Bogotá y sus alrededores con tu compañero peludo! Lugares Pet-Friendly para disfrutar con tu mascota 🐶🐱</h3>
+      <div class="separador-5"></div>
+      <p>¡Descubre Bogotá y sus alrededores con tu compañero peludo!</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/blog/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-two" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Blogs-Mascotas-1_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Alimentación y cuidado</span>
+      <div class="separador-5"></div>
+      <h3>Secretos para mantener a tus mascotas impecables</h3>
+      <div class="separador-5"></div>
+      <p>Secretos para mantener a tus mascotas impecables</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/blog/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Noticias-Mascotas-4_255X158.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <span class="wrapperTextCategory">Noticia</span>
+      <div class="separador-5"></div>
+      <h3>Verduras que le añadirán un toque saludable a la dieta de tu mascota.</h3>
+      <div class="separador-5"></div>
+      <p>Verduras que le añadirán un toque saludable a la dieta de tu mascota.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+  		</div>
+  	</div>
+  </div>
+</section>
+
+<div class="separador-20"></div>
+
+<section class="wrapperSeven pd-auto-10">
+	<div class="container">
+  	<div class="row">
+  		<div class="col-12">
+  			<h2>Conoce nuestros aliados</h2>
+  			<div class="separador-30"></div>
+  		</div>
+  	</div>
+  </div>
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12">
+  			<div class="owl-carousel wrapperSevenOwlCarousel wrapperCustomDots wrapperCustomNav whiteBackgroung owl-theme owl-loaded owl-drag">
+  				  
+  
+  
+  
+
+
+  			<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1327px;"><div class="owl-item active" style="width: 301.502px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/" target="_blank" class="wrapperItemSeven">
+    <div class="wrapperHeaderItemSeven">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/aliado1.jpg" class="img-fluid" width="100%" height="50">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <p>Seguro de salud para perros</p>
+      <div class="separador-10"></div>
+     <!--<span class="linkFour">Conoce el aliado</span>-->
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 301.502px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/" target="_blank" class="wrapperItemSeven">
+    <div class="wrapperHeaderItemSeven">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/aliado2.jpg" class="img-fluid" width="100%" height="50">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <p>Urgencias veterinarias 24 horas</p>
+      <div class="separador-10"></div>
+     <!--<span class="linkFour">Conoce el aliado</span>-->
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 301.502px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/" target="_blank" class="wrapperItemSeven">
+    <div class="wrapperHeaderItemSeven">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/aliado3.jpg" class="img-fluid" width="100%" height="50">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <p>Especialistas en mascotas y productos</p>
+      <div class="separador-10"></div>
+     <!--<span class="linkFour">Conoce el aliado</span>-->
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 301.502px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/mascotas/" target="_blank" class="wrapperItemSeven">
+    <div class="wrapperHeaderItemSeven">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/aliado4.jpg" class="img-fluid" width="100%" height="50">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <p>Todo un universo de soluciones para tu mascota</p>
+      <div class="separador-10"></div>
+     <!--<span class="linkFour">Conoce el aliado</span>-->
+    </div>
+  </a>
+</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+  		</div>
+  	</div>
+  </div>
+  <div class="separador-30"></div>
+    
+<div class="container">
+  	<div class="row align-items-center justify-content-between">
+      <div class="col-12 col-md-6">
+  <h3>Dale lo mejor a tu mascota</h3>
+  <div class="separador-10"></div>
+    
+            <div class="field field--name-field-descripcion-dale-todo-masc field--type-string-long field--label-hidden field__item">Con el cupo de Crédito Colsubsidio podrás hacer las compras de tu amigo de cuatro patas y recibir beneficios exclusivos con nuestros aliados. Descubre ofertas y descuentos en productos para tu mascota.</div>
+      
+  <div class="separador-10"></div>
+  <a target="_blank" href="https://transacciones.colsubsidio.com/creditos/solicitud/cupo-de-credito/onboarding" class="linkSeven">Solicitud de Crédito Colsubsidio</a>
+  <div class="separador-20 visibleMobile"></div>
+</div>
+<div class="col-12 col-md-6">
+  <img src="./Página de inicio _ Mascotas Colsubsidio_files/BANNER-MS.png" class="imgRight">
+</div>
+  	</div>
+  </div>
+
+  <div class="separador-70 visibleMobile"></div>
+</section>
+
+<div class="separador-30"></div>
+
+  <section class="wrapperSix pd-auto-10">
+	<div class="container">
+  	<div class="row align-items-center justify-content-between">
+      <div class="col-12 col-md-6">
+    <iframe width="100%" height="326" src="./Página de inicio _ Mascotas Colsubsidio_files/ZIpnDppLEDs.html" title="Mascotas Colsubsidio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" data-gtm-yt-inspected-179337364_38="true" id="964131633" data-gtm-yt-inspected-7="true"></iframe>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="wrapperColumnRight">
+      <h3>Conoce nuestro Parque de Entretenimiento Canino del Club Bellavista</h3>
+      <div class="separador-10"></div>
+      
+            <div class="field field--name-field-descripcion-unete-n-canal field--type-string-long field--label-hidden field__item">Diviértete con tu amigo de 4 patas en un espacio de 2.000 m² con:<br>
+- Pista de Agility Dog, <br>
+- Areneras <br>
+- Piscina para mascotas <br>
+- Rodaderos <br>
+<br>
+</div>
+      
+      <div class="separador-10"></div>
+      <a target="_blank" href="https://www.colsubsidio.com/desconectate/esparcimiento/mascotas/entretenimiento" class="linkSix">¡Y mucho más!</a>
+    </div>
+  </div>
+  	</div>
+  </div>
+</section>
+
+
+<div class="separador-70 visibleDesktop"></div>
+
+<section class="wrapperFive pd-auto-10">
+	<div class="container">
+  	<div class="row">
+  		<div class="col-12">
+  			<h2>Nuestros espacios petfriendly</h2>
+  			<div class="separador-20"></div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-12">
+  			<div class="owl-carousel wrapperFiveOwlCarousel wrapperCustomDots wrapperCustomNav owl-theme owl-loaded owl-drag">
+			          
+
+			  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1327px;"><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/clubes/club/bellavista/parque-canino#guia" target="_blank" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/image_7.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <h3>Parque de Entretenimiento Canino</h3>
+      <div class="separador-5"></div>
+      <p>Un espacio de más de 2.000 m² donde tu mascota disfrutará de pista de agility, piscina, rodaderos, arenero canino, entre otros.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.colsubsidio.com/clubes/club/bellavista" target="_blank" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/image_9.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <h3>Club Bellavista</h3>
+      <div class="separador-5"></div>
+      <p>Disfruta con tu mascota de uno de los parques caninos más grandes del país y encuentra una gran oferta de bebidas y alimentos.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div><div class="owl-item active" style="width: 412.003px; margin-right: 30px;"><div class="item">
+  <a href="https://www.hotelescolsubsidio.com/destino/paipa/club-nautico/" target="_blank" class="wrapperItemFive">
+    <div class="wrapperHeaderItemFive">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/Group 8230.svg" class="img-fluid wrpperVector1" width="254" height="235">
+      <img src="./Página de inicio _ Mascotas Colsubsidio_files/image_8.jpg" class="img-fluid wrpperVector2" width="254" height="235">
+    </div>
+    <div class="wrapperBodyItemFive">
+      <div class="separador-5"></div>
+      <h3>Restaurante Club Náutico</h3>
+      <div class="separador-5"></div>
+      <p>Deleítate con la gastronomía local y del mundo en nuestro restaurante Dog Friendly; y disfruta de la mejor vista al Lago Sochagota en Paipa, Boyacá.</p>
+      <div class="separador-5"></div>
+      <span class="linkFour">Conoce más</span>
+    </div>
+  </a>
+</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next disabled"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+  		</div>
+  	</div>
+  </div>
+</section>
+
+<div class="separador-30"></div>
+
+
+<!-- Modal -->
+<div class="modal fade modalInscription" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<div class="row justify-content-between">
+      		<div class="col-8">
+      			<div class="separador-30"></div>
+		        <h3>Únete a nuestra comunidad</h3>
+		        <div class="separador-10"></div>
+		        <p>Regístrate ahora y descubre un mundo dedicado a nuestros amigos peludos, con eventos, tips y mucho más contenido que hemos preparado para ti.</p>
+		        <div class="separador-10"></div>
+						        <a href="https://transacciones.colsubsidio.com/comunidades/comunidades/inicio" class="btnInscription">Ingresa aquí</a>
+		        						        <div class="separador-30"></div>	
+      		</div>
+      		<div class="col-4"></div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <a href="http://www.colsubsidio.com/mascotas/">
+			<img src="./Página de inicio _ Mascotas Colsubsidio_files/logo-mascotas-mobile.svg" width="120" height="42">
+		</a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+    	<img src="./Página de inicio _ Mascotas Colsubsidio_files/ico-close-menu-mobil.svg" width="36" height="36">
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+    	<li>
+				<a href="http://www.colsubsidio.com/mascotas/">Inicio</a>
+			</li>
+			<li>
+				<a href="http://www.colsubsidio.com/mascotas//blog">Blog</a>
+			</li>
+			<li>
+				<a href="http://www.colsubsidio.com/mascotas//eventos">Eventos</a>
+			</li>
+			<li>
+				<a href="http://www.colsubsidio.com/mascotas//catalogo-productos">Productos</a>
+			</li>
+			<li>
+				<a href="https://www.colsubsidio.com/mascotas/#">Aliados</a>
+			</li>
+			<li style="position:relative;display:none;" id="userActionLogoutMobile">
+								<a href="javascript:void(0);">Cerrar sesión</a>
+			</li>
+			<li>
+				<div class="wrapperBtnMenu flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					<a href="javascript:void(0);">Ingreso</a> / <a href="javascript:void(0);">Registro</a>
+				</div>
+			</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+	<div class="container-fluid">
+		<div class="row align-items-center justify-content-between">
+			<div class="col-12 order-2 col-md order-md-1">
+				<p>Todos los derechos reservados © Colsubsidio 2023</p>
+			</div>
+			<div class="col-12 order-1 col-md order-md-2 text-end">
+				<a href="https://www.colsubsidio.com/mascotas/#">
+					<img src="./Página de inicio _ Mascotas Colsubsidio_files/logo-supersubsidio-1.png" style="height:22px;" class="img-fluid">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>//localStorage.clear();</script>
+
+  </div>
+
+    
+    <script src="./Página de inicio _ Mascotas Colsubsidio_files/bootstrap.bundle.js.descarga"></script>
+<script src="./Página de inicio _ Mascotas Colsubsidio_files/jquery-3.7.1.min.js.descarga"></script>
+<script src="./Página de inicio _ Mascotas Colsubsidio_files/mascotascolsubsidio.js.descarga"></script>
+<script src="./Página de inicio _ Mascotas Colsubsidio_files/slick.min.js.descarga"></script>
+<script src="./Página de inicio _ Mascotas Colsubsidio_files/owl.carousel.min.js.descarga"></script>
+
+  <script type="text/javascript" src="./Página de inicio _ Mascotas Colsubsidio_files/_Incapsula_Resource" async=""></script>
+
+<script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","t8802p4vjl");</script></body></html>
