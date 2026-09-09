@@ -216,7 +216,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       precio: 90000,
       categoria: "Cat",
       imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/rascadorcat.jpg`,
-      descripcion: "A cat scratcher (rascador) is an essential feline accessory designed to satisfy a cat's natural urge to scratch. It protects your furniture while providing an outlet for stress, stretching, and marking territory. Helps remove old claw sheaths and keeps nails sharp."
+      descripcion: "A cat scratcher (rascador) is an essential feline accessory designed to satisfy a cat's natural urge to scratch. It protects your furniture while providing an outlet for stress, stretching, and marking territory. Helps remove old claw sheaths and keeps nails sharp.",
       cantidad: 80
     },
     {
@@ -288,7 +288,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
       precio: 100000,
       categoria: "Animal",
       imagen: `${import.meta.env.VITE_API_URL}/api/imagenes/pigfood2.jpg`,
-      descripcion: "Pig feeders are essential structures designed to provide feed continuously or in rations. They optimize feed intake, minimize waste, and prevent feed contamination."
+      descripcion: "Pig feeders are essential structures designed to provide feed continuously or in rations. They optimize feed intake, minimize waste, and prevent feed contamination.",
       cantidad: 250
     },
   ];
