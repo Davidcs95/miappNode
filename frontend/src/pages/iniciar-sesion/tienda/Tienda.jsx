@@ -370,7 +370,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
 
             <li className="dropdownthree">
-            <img className="cat" src={`${import.meta.env.VITE_API_URL}/api/imagenes/ganado2.png`} alt="Animals" />
+            <img className="Animals" src={`${import.meta.env.VITE_API_URL}/api/imagenes/ganado2.png`} alt="Animals" />
              <button onClick={scrollToAnimals} className="btn-link-nav">Animals</button>
 
             <ul className="submenu">
