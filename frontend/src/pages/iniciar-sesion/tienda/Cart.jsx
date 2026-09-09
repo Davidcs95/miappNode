@@ -74,7 +74,7 @@ const Cart = () => {
 
               {/* Imagen del producto */}
             <img 
-  src={`${import.meta.env.VITE_API_URL}/imagenes/${item.imagen}`} 
+  src={item.imagen.startsWith('http') ? item.imagen : `${import.meta.env.VITE_API_URL}/api/imagenes/${item.imagen}`} 
   alt={item.nombre} 
   style={{
     width: '200px',
