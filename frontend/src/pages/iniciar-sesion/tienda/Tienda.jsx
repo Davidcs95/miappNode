@@ -354,12 +354,37 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
           <li className="dropdowntwo">
             <img className="cat" src={`${import.meta.env.VITE_API_URL}/api/imagenes/pata.png`} alt="CAT" />
-            <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
+             <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
+
+            <ul className="submenu">
+              <li><a href="#cats">Toys</a></li>
+              <li><a href="#cats">Food</a></li>
+              <li><a href="#cats">Beds</a></li>
+              <li><a href="#cats">Accessories</a></li>
+            </ul>
           </li>
 
-          <li className="dropdownthree" onClick={scrollToAnimals} style={{ cursor: 'pointer' }}>
-            <button className="btn-link-nav">Animals</button>
+
+
+
+
+
+            <li className="dropdownthree">
+            <img className="cat" src={`${import.meta.env.VITE_API_URL}/api/imagenes/ganado2.png`} alt="Animals" />
+             <button onClick={scrollToAnimals} className="btn-link-nav">Animals</button>
+
+            <ul className="submenu">
+              <li><a href="#animals">Toys</a></li>
+              <li><a href="#animals">Food</a></li>
+              <li><a href="#animals">Accessories</a></li>
+            </ul>
           </li>
+
+        
+
+
+
+          
 
           <li className="contact">
             <img className="huella" src={`${import.meta.env.VITE_API_URL}/api/imagenes/huella.png`} alt="" />
@@ -367,7 +392,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
           </li>
 
           <li className="find-store">
-            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/api/imagenes/store-solid.png`} alt="" />
+            <img className="find your store" src={`${import.meta.env.VITE_API_URL}/api/imagenes/Hueso.png`} alt="" />
             <button onClick={scrollToFindStore} className="btn-link-nav">Find your store</button>
           </li>
 
