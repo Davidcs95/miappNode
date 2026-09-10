@@ -51,6 +51,7 @@ function AdminPanel() {
     <div className="admin-container">
       <h2>Administration Panel</h2>
       
+      
       {/* INPUTS */}
       <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Name" />
       

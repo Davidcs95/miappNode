@@ -9,33 +9,33 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './productos.css';
 
-const ProductCarousel = ({ productos }) => {
+const ProductCarousel = ({ productos, onAgregarAlCarrito }) => {
   const navigate = useNavigate();
 
-  // 1. Definimos la función para la alerta
-    const handleAgregarCarrito = (producto) => {
-    const carritoActual = JSON.parse(localStorage.getItem('carrito')) || [];
+  // Función para agregar al carrito usando la clave 'compras'
+  const handleAgregarCarrito = (producto) => {
+    // CAMBIO AQUÍ: leemos de 'compras'
+    const carritoActual = JSON.parse(localStorage.getItem('compras')) || [];
     const nuevoCarrito = [...carritoActual, producto];
-    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+    
+    // CAMBIO AQUÍ: guardamos en 'compras'
+    localStorage.setItem('compras', JSON.stringify(nuevoCarrito));
     console.log("Producto guardado:", producto);
-    console.log("Carrito total en LocalStorage:", localStorage.getItem('carrito'));
-  
-
-
+    console.log("Carrito total en LocalStorage:", localStorage.getItem('compras'));
 
     Swal.fire({
-    title: 'Added!',
-    text: `${producto.nombre} is in your cart.`,
-    icon: 'success',
-    showCancelButton: true, // Esto crea el botón "Next"
-    confirmButtonText: 'See cart',
-    cancelButtonText: 'Continue shopping',
-    confirmButtonColor: '#ff9800',
+      title: 'Added!',
+      text: `${producto.nombre} is in your cart.`,
+      icon: 'success',
+      showCancelButton: true,
+      confirmButtonText: 'See cart',
+      cancelButtonText: 'Continue shopping',
+      confirmButtonColor: '#ff9800',
     }).then((result) => {
-    if (result.isConfirmed) {
-      // Redirigir a la página de carrito
-     navigate('/carrito'); 
-    }
+      if (result.isConfirmed) {
+        // Redirigir a la página de compras
+        navigate('/compras'); 
+      }
     });
   };
 
@@ -52,9 +52,9 @@ const ProductCarousel = ({ productos }) => {
           <SwiperSlide key={producto.id}>
             <div className="card">
               <img
-  src={producto.imagen}
-  alt={producto.nombre}
-/>
+                src={producto.imagen.startsWith('http') ? producto.imagen : `${import.meta.env.VITE_API_URL}/api/imagenes/${producto.imagen}`}
+                alt={producto.nombre}
+              />
               
               <div className="card-info">
                 <h3>{producto.nombre}</h3>
@@ -67,7 +67,6 @@ const ProductCarousel = ({ productos }) => {
 
                 <button 
                   className="btn-comprar" 
-                  // 2. Aquí llamamos a la función pasando el producto específico
                   onClick={() => handleAgregarCarrito(producto)}
                 >
                   Add to cart

@@ -1,9 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
 .cart-container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  
+  /* Agrega esta línea para cumplir con la sugerencia estándar */
+  background-clip: text; 
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 4px 6px rgba(255, 152, 0, 0.15);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Un toque decorativo opcional: añade una pequeña huella o adorno sutil debajo del título */
+h2::after {
+  content: ' 🐾';
+  font-size: 2rem;
+  vertical-align: middle;
+  -webkit-text-fill-color: initial; /* Asegura que la huella mantenga su color natural o emoji */
+}
+
+
+
+.cart-empty {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.cart-empty-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.cart-empty p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0;
+}
+
 
 .cart-item {
   display: flex;
@@ -14,6 +64,15 @@
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto cuando pasas el cursor sobre cada tarjeta */
+.cart-item:hover {
+  background: #f1f5f9; /* Cambia ligeramente de tono (gris más cálido/azulado) */
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Se resalta elevándose un poco */
+  transform: translateY(-2px);
 }
 
 .cart-item-details {
@@ -35,10 +94,28 @@ button {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #fff;
+  transition: background-color 0.2s;
 }
 
 button:hover {
   background-color: #eee;
+}
+
+/* Estilo para el botón de Back */
+.btn-back {
+  background-color: #64748b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #475569;
 }
 
 .btn-pagar {

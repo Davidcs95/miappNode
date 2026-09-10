@@ -8,6 +8,8 @@ import Cart from './pages/iniciar-sesion/tienda/Cart.jsx';
 import AdminPanel from './pages/iniciar-sesion/AdminPanel.jsx';
 import LoginAdmin from './pages/iniciar-sesion/LoginAdmin.jsx';
 
+
+
 function App() {
   // 1. Estado de usuarios (lee del localStorage)
    const [isAdmin, setIsAdmin] = useState(() => {
@@ -37,7 +39,7 @@ function App() {
         <Route path="/" element={<Tienda usuarioLogueado={usuarioLogueado} cerrarSesion={cerrarSesion} />} />
         <Route path="/login" element={<Login usuarios={usuarios} setUsuarioLogueado={setUsuarioLogueado} />} />
         <Route path="/register" element={<Register setUsuarios={setUsuarios} usuarios={usuarios} />} />
-        <Route path="/carrito" element={<Cart />} />
+        <Route path="/compras" element={<Cart />} />
         <Route path="/" element={<Tienda />} />
         <Route path="/admin" element={isAdmin ? <AdminPanel /> : <LoginAdmin setIsAdmin={setIsAdmin} />} />
         

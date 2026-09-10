@@ -25,6 +25,8 @@ const cerrarSesionAdmin = () => {
   return (
     <div style={{ padding: '50px', textAlign: 'center', maxWidth: '400px', margin: 'auto' }}>
       <h2>Administrative Access</h2>
+     
+
       <input 
         type="password" 
         value={password}
@@ -33,7 +35,7 @@ const cerrarSesionAdmin = () => {
         style={{ padding: '10px', width: '100%', marginBottom: '10px' }}
       />
       <button className='btn-logout' onClick={verificar} style={{ padding: '10px 20px' }}>Log in</button>
-      
+     
     </div>
   );
 };

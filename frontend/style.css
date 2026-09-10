@@ -27,6 +27,38 @@
     cursor: pointer;
 }
 
+
+.btn-admin-access {
+    background-color: transparent;
+    color: black;
+    font-family: 'pacifico', cursive;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 134, 242, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid #0086F2;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px; /* Espacio de separación respecto al carrito */
+}
+
+.btn-admin-access:hover {
+    background-color: #E0F2FE;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 134, 242, 0.6);
+}
+
+/* Opcional: Asegura que la imagen del carrito tenga un tamaño controlado al lado */
+.img-carrito {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 .titulo a {
     font-family: cursive;
     color: black;
@@ -163,20 +195,48 @@
 
 
 .login {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y la palabra Login */
     list-style: none;
     cursor: pointer;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 134, 242, 0.3);
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
+.login a {
+    color: black;
+    font-family: pacifico, cursive;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+
+
 .carrito {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono del carrito y la palabra Purchase */
     list-style: none;
     cursor: pointer;
     text-decoration: none;  
+    padding: 5px 10px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 134, 242, 0.3);
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
+
+.carrito a {
+    color: black;
+    font-family: pacifico, cursive;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 .login:hover {
     background-color: #E0F2FE;
     transform: translateY(-3px);

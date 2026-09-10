@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './cart.css';
 
 const Cart = () => {
   const [carrito, setCarrito] = useState([]);
+  const navigate = useNavigate();
 
-  // Cargar carrito desde localStorage
+  // Cargar compras desde localStorage usando la clave 'compras'
   useEffect(() => {
     const productosGuardados =
-      JSON.parse(localStorage.getItem('carrito')) || [];
+      JSON.parse(localStorage.getItem('compras')) || [];
 
     setCarrito(productosGuardados);
   }, []);
 
-  // Actualizar carrito en estado y localStorage
+  // Actualizar carrito en estado y guardar en localStorage bajo la clave 'compras'
   const actualizarCarrito = (nuevoCarrito) => {
     setCarrito(nuevoCarrito);
-    localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
+    localStorage.setItem('compras', JSON.stringify(nuevoCarrito));
   };
 
   // Aumentar o disminuir cantidad
@@ -60,30 +62,38 @@ const Cart = () => {
   return (
     <div className="cart-container">
 
+      {/* Botón Back para retroceder */}
+      <button className="btn-back" onClick={() => navigate(-1)}>
+        ← Back
+      </button>
+
       <h2>Tu Carrito</h2>
 
       {carrito.length === 0 ? (
-        <p>Tu carrito está vacío.</p>
+       
+        <div className="cart-empty">
+          <span className="cart-empty-icon">🐶🔍</span>
+          <p>Tu carrito está vacío.</p>
+        </div>
       ) : (
         carrito.map((item) => {
-          // Log para inspeccionar qué trae cada producto y su imagen exacta
           console.log("Producto:", item.nombre, "Valor de item.imagen:", item.imagen);
 
           return (
             <div key={item.id} className="cart-item">
 
               {/* Imagen del producto */}
-            <img 
-  src={item.imagen.startsWith('http') ? item.imagen : `${import.meta.env.VITE_API_URL}/api/imagenes/${item.imagen}`} 
-  alt={item.nombre} 
-  style={{
-    width: '200px',
-    height: '200px',
-    objectFit: 'cover',
-    marginRight: '20px',
-    borderRadius: '8px',
-  }}
-/>
+              <img 
+                src={item.imagen.startsWith('http') ? item.imagen : `${import.meta.env.VITE_API_URL}/api/imagenes/${item.imagen}`} 
+                alt={item.nombre} 
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  marginRight: '20px',
+                  borderRadius: '8px',
+                }}
+              />
 
               {/* Información del producto */}
               <span>

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
 import './Section2.css';
 import './Section3.css';
@@ -14,7 +14,10 @@ import InfoTarjeta3 from './InfoTarjeta3';
 import FormularioRegistro from '../FormularioRegistro';
 import Mapa from './Mapa';
 
+
+
 const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
+  const navigate = useNavigate();
   const [showButton, setShowButton] = useState(false);
   const seccionPerrosRef = useRef(null);
   const seccionCatsRef = useRef(null);
@@ -22,6 +25,8 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
   const seccionFormRegRef = useRef(null);
   const seccionFindStoreRef = useRef(null);
   const [productos, setProductos] = useState([]);
+  const [busqueda, setBusqueda] = useState('');
+
 
   // Efecto para el botón de volver arriba
   useEffect(() => {
@@ -293,23 +298,72 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
     },
   ];
 
-  const listaUnificada = [...misProductos, ...productos];
+   const listaUnificada = [...misProductos, ...productos];
 
   const productosDog = listaUnificada.filter(p => p.categoria === 'Dog');
   const productosCat = listaUnificada.filter(p => p.categoria === 'Cat');
   const productosAnimal = listaUnificada.filter(p => p.categoria === 'Animal');
 
+  const agregarAlCarrito = (producto) => {
+    const carritoActual = JSON.parse(localStorage.getItem('carrito')) || [];
+    const index = carritoActual.findIndex(item => item.id === producto.id);
+
+
+
+
+if (index !== -1) {
+      carritoActual[index].cantidadSeleccionada = (carritoActual[index].cantidadSeleccionada || 1) + 1;
+    } else {
+      carritoActual.push({ ...producto, cantidadSeleccionada: 1 });
+    }
+
+    localStorage.setItem('carrito', JSON.stringify(carritoActual));
+    navigate('/compras');
+  };
+
+  const manejarBusqueda = () => {
+    const termino = busqueda.toLowerCase().trim();
+    if (!termino) return;
+
+    const productoEncontrado = listaUnificada.find(p => 
+      (p.nombre && p.nombre.toLowerCase().includes(termino)) ||
+      (p.descripcion && p.descripcion.toLowerCase().includes(termino)) ||
+      (p.categoria && p.categoria.toLowerCase().includes(termino))
+    );
+
+    if (productoEncontrado) {
+      const categoria = productoEncontrado.categoria ? productoEncontrado.categoria.toLowerCase() : '';
+      
+      if (categoria.includes('dog') || categoria.includes('perro')) {
+        scrollToPerros();
+      } else if (categoria.includes('cat') || categoria.includes('gato')) {
+        scrollToCats();
+      } else {
+        scrollToAnimals();
+      }
+    } else {
+      if (termino.includes('perro') || termino.includes('dog') || termino.includes('manta') || termino.includes('cama')) {
+        scrollToPerros();
+      } else if (termino.includes('gato') || termino.includes('cat')) {
+        scrollToCats();
+      } else if (termino.includes('animal') || termino.includes('ganado')) {
+        scrollToAnimals();
+      } else {
+        alert("No se encontró ningún producto o categoría con ese nombre.");
+      }
+    }
+  };
   return (
     <div className="contenedor-padre">
       <section>
         <div className="head">
           <div className="titulo">
-            <Link to="/" className="logo">
-              <h1>
-                <img src={`${import.meta.env.VITE_API_URL}/api/imagenes/Filomena.png`} alt="Logo Filomena" />
-                ¡Filomena store!
-              </h1>
-            </Link>
+  <a href="/" className="logo">
+    <h1>
+      <img src={`${import.meta.env.VITE_API_URL}/api/imagenes/Filomena.png`} alt="Logo Filomena" />
+      ¡Filomena store!
+    </h1>
+  </a>
 
             {usuarioLogueado ? (
               <div className="saludo-usuario">
@@ -319,15 +373,20 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
             ) : null}
           </div>
 
-          <div className="huesos">
+            <div className="huesos">
             <input
               type="text"
               className="input1"
               placeholder="What are you looking for?"
+              value={busqueda}
+              onChange={(e) => setBusqueda(e.target.value)} // Captura lo que escribes en tiempo real
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') manejarBusqueda(); // Permite buscar presionando Enter
+              }}
             />
           </div>
 
-          <button className="button3" type="submit">¡go!</button>
+          <button className="button3" type="button" onClick={manejarBusqueda}>¡go!</button>
 
           <li className="login">
             <img className="img-iniciar-sesion" src={`${import.meta.env.VITE_API_URL}/api/imagenes/iniciar-sesion.png`} alt="" />
@@ -338,7 +397,19 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
             <img className="img-carrito" src={`${import.meta.env.VITE_API_URL}/api/imagenes/carrito-de-compras.png`} alt="" />
             <Link to="/compras"> Purchase</Link>
           </li>
+         <Link to="/admin">
+          <button className="btn-admin-access">Administrative Access</button>
+        </Link>
+
+          
         </div>
+
+
+       
+
+
+
+
 
         <div className="nav2">
           <li className="dropdown">
@@ -352,11 +423,13 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
             </ul>
           </li>
 
+           
+
           <li className="dropdowntwo">
             <img className="cat" src={`${import.meta.env.VITE_API_URL}/api/imagenes/pata.png`} alt="CAT" />
-             <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
+            <button onClick={scrollToCats} className="btn-link-nav">Cats</button>
 
-            <ul className="submenu">
+            <ul className="submenu2">
               <li><a href="#cats">Toys</a></li>
               <li><a href="#cats">Food</a></li>
               <li><a href="#cats">Beds</a></li>
@@ -364,21 +437,17 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
             </ul>
           </li>
 
+          <li className="dropdownthree">
+            <img className="Animals" src={`${import.meta.env.VITE_API_URL}/api/imagenes/ganado2.png`} alt="ANIMALS" />
+            <button onClick={scrollToAnimals} className="btn-link-nav">Animals</button>
 
-
-
-
-
-            <li className="dropdownthree">
-            <img className="Animals" src={`${import.meta.env.VITE_API_URL}/api/imagenes/ganado2.png`} alt="Animals" />
-             <button onClick={scrollToAnimals} className="btn-link-nav">Animals</button>
-
-            <ul className="submenu">
+            <ul className="submenu3">
               <li><a href="#animals">Toys</a></li>
               <li><a href="#animals">Food</a></li>
               <li><a href="#animals">Accessories</a></li>
             </ul>
           </li>
+  
 
         
 
@@ -428,7 +497,7 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
         </div>
       </section>
 
-      <section>
+   <section>
         <section className="parallax-section">
           <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/labradorright.jpg')` }}></div>
           <h2 className="section-title">DOGS</h2>
@@ -437,8 +506,10 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
         <div ref={seccionPerrosRef}>
           <h2>Dogs products</h2>
           
+          
 
-<ProductCarousel productos={productosDog} />
+<ProductCarousel productos={productosDog} handleAgregarCarrito={agregarAlCarrito} />
+          
           <div className="columna-derecha">
             <InfoTarjeta />
           </div>
@@ -454,8 +525,9 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
         <div ref={seccionCatsRef} className="seccion-cats-container">
           <h2>Cats products</h2>
           
+          
 
-<ProductCarousel productos={productosCat} />
+<ProductCarousel productos={productosCat} handleAgregarCarrito={agregarAlCarrito} />
         </div>
 
         <div className='contenido2'>
@@ -465,15 +537,16 @@ const Tienda = ({ usuarioLogueado, cerrarSesion }) => {
 
       <section>
         <section className="parallax-section">
-         <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/aniamlesfull.jpg')` }}></div>
+          <div className="parallax-bg" style={{ backgroundImage: `url('${import.meta.env.VITE_API_URL}/api/imagenes/aniamlesfull.jpg')` }}></div>
           <h2 className="section-title">Animals</h2>
         </section>
 
         <div ref={seccionAnimalsRef} className="seccion-Animal-container">
           <h2>Others animals products</h2>
+
           
 
-<ProductCarousel productos={productosAnimal} />
+<ProductCarousel productos={productosAnimal} handleAgregarCarrito={agregarAlCarrito} />
         </div>
 
         <div>
